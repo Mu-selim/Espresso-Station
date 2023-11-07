@@ -23,6 +23,13 @@ export default {
       // => @media (min-width: 1920px) { ... }
     },
     extend: {
+      colors: {
+        coffee: "#6f4e37",
+        "coffee-light": "#e4d2c2",
+        "coffee-dark": "#3c2b23",
+        "coffee-darkest": "#353535",
+        "coffee-header": "#a76e36",
+      },
       fontFamily: {
         noto: ["Noto Kufi Arabic", "sans-serif"],
         poppins: ["Poppins", "sans-serif"],
