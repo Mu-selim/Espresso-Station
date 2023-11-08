@@ -5,6 +5,7 @@ import { HeroSection } from "./layouts/heroSection";
 import { BrandsSection } from "./layouts/brandsSection";
 import { AboutSection } from "./layouts/aboutSection";
 import { ProductsSection } from "./layouts/productsSection";
+import { CustomersSection } from "./layouts/customersSection";
 
 export const App = () => {
   const { i18n } = useTranslation("global");
@@ -28,6 +29,7 @@ export const App = () => {
           <BrandsSection />
           <AboutSection />
           <ProductsSection />
+          <CustomersSection />
         </main>
       </div>
     </>

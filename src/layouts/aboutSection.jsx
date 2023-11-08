@@ -18,7 +18,7 @@ export const AboutSection = () => {
                 key={idx}
                 className="max-w-lg text-sm xxs:text-lg 2xl:text-2xl text-center sm:text-start tracking-wider"
                 style={{
-                  wordSpacing: "0.6rem",
+                  wordSpacing: "0.5rem",
                   letterSpacing: "0",
                 }}
               >
