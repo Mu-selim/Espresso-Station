@@ -62,6 +62,7 @@
     ],
     "list": {
       "equipmentCommercial": {
+        "title": "معدات الإسبرسو التجارية",
         "arr": [
           {
             "title": "Rocket Espresso R9V",
@@ -138,6 +139,7 @@
         "moreLink": "#"
       },
       "equipmentHome": {
+        "title": "معدات الإسبرسو المنزلية",
         "arr": [
           {
             "title": "GS3 MPGS3 MP",
@@ -163,6 +165,7 @@
         "moreLink": "#"
       },
       "grindersCommercial": {
+        "title": "طواحين القهوة التجارية",
         "arr": [
           {
             "title": "MAHLKONIG E80 SUPREME",
@@ -237,6 +240,7 @@
         "moreLink": "#"
       },
       "grindersHome": {
+        "title": "طواحين القهوة المنزلية",
         "arr": [
           {
             "title": "يوريكا سنقل دوز Single Dose",
@@ -285,6 +289,7 @@
         "moreLink": "#"
       },
       "automaticBrewing": {
+        "title": "التحضير الآلي",
         "arr": [
           {
             "title": "iRhea SF",
@@ -334,6 +339,7 @@
         "moreLink": "#"
       },
       "iceMakers": {
+        "title": "ماكينات الثلج",
         "arr": [
           {
             "title": "BWT BESTAQUA 14 ROC COFFEE",
@@ -350,6 +356,7 @@
         "moreLink": "#"
       },
       "ovens": {
+        "title": "الأفران",
         "arr": [
           {
             "title": "STEFANIA LineMiss ™ 3",

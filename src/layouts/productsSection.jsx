@@ -13,8 +13,6 @@ export const ProductsSection = () => {
   const [dropDown2, setDropDown2] = useState(false);
   const [productList, setProductList] = useState("equipmentCommercial");
 
-  console.log(productList);
-
   const toggleDropDown1 = () => setDropDown1(!dropDown1);
   const toggleDropDown2 = () => setDropDown2(!dropDown2);
 
@@ -32,7 +30,7 @@ export const ProductsSection = () => {
             setProductList,
           }}
         />
-        <ProductList />
+        <ProductList productList={productList} />
       </div>
     </section>
   );

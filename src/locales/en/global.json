@@ -62,6 +62,7 @@
     ],
     "list": {
       "equipmentCommercial": {
+        "title": "Commercial Espresso Equipment",
         "arr": [
           {
             "title": "Rocket Espresso R9V",
@@ -138,6 +139,7 @@
         "moreLink": "#"
       },
       "equipmentHome": {
+        "title": "Home Espresso Equipment",
         "arr": [
           {
             "title": "GS3 MPGS3 MP",
@@ -163,6 +165,7 @@
         "moreLink": "#"
       },
       "grindersCommercial": {
+        "title": "Commercial Grinders",
         "arr": [
           {
             "title": "MAHLKONIG E80 SUPREME",
@@ -233,6 +236,7 @@
         "moreLink": "#"
       },
       "grindersHome": {
+        "title": "Home Grinders",
         "arr": [
           {
             "title": "Eureka Single Dose",
@@ -281,6 +285,7 @@
         "moreLink": "#"
       },
       "automaticBrewing": {
+        "title": "Automatic Brewing",
         "arr": [
           {
             "title": "iRhea SF",
@@ -330,6 +335,7 @@
         "moreLink": "#"
       },
       "iceMakers": {
+        "title": "Ice Makers",
         "arr": [
           {
             "title": "BWT BESTAQUA 14 ROC COFFEE",
@@ -346,6 +352,7 @@
         "moreLink": "#"
       },
       "ovens": {
+        "title": "Ovens",
         "arr": [
           {
             "title": "STEFANIA LineMiss TM 3",
