@@ -1,12 +1,11 @@
 import propTypes from "prop-types";
 import { useTranslation } from "react-i18next";
 import logo from "../assets/images/logo.webp";
-import { useState } from "react";
 import { BurgerMenu } from "./burgerMenu";
 
 const NavList = ({ distanceFromTop }) => {
   const { t: translate } = useTranslation("global");
-  const [navList] = useState(translate("mainNavbar", { returnObjects: true }));
+  const [navList] = translate("mainNavbar", { returnObjects: true });
 
   return (
     <ul className="hidden ml:flex items-center gap-4 ml:gap-6 xl:gap-8">
@@ -28,7 +27,11 @@ const NavList = ({ distanceFromTop }) => {
 
 export const Navbar = ({ distanceFromTop, isOpened, setIsOpened }) => {
   return (
-    <nav className={`flex justify-between items-center bg-gray-100 bg-opacity-70 py-3 px-6 rounded-xl transition-linear ${isOpened? "rounded-b-none": ""}`}>
+    <nav
+      className={`flex justify-between items-center bg-gray-100 bg-opacity-70 py-3 px-6 rounded-xl transition-linear ${
+        isOpened ? "rounded-b-none" : ""
+      }`}
+    >
       <div
         className={`transition-linear ${
           distanceFromTop ? "w-10 h-10" : "w-12 h-12"
