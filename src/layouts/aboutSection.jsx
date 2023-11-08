@@ -19,6 +19,7 @@ export const AboutSection = () => {
                 className="max-w-lg text-sm xxs:text-lg 2xl:text-2xl text-center sm:text-start tracking-wider"
                 style={{
                   wordSpacing: "0.6rem",
+                  letterSpacing: "0",
                 }}
               >
                 {paragraph}
