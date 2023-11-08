@@ -34,7 +34,7 @@ export const ImageSlider = () => {
 
   return (
     <div className="my-4 mx-4 sm:mx-8 py-8 flex justify-center">
-      <div className="overflow-hidden max-w-3xl px-4 sm:px-12">
+      <div className="overflow-hidden max-w-4xl 2xl:max-w-7xl px-4 sm:px-12">
         <Swiper
           dir={i18n.language.includes("ar".toLowerCase()) ? "rtl" : "ltr"}
           slidesPerView={1}

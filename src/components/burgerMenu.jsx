@@ -3,7 +3,7 @@ import propTypes from "prop-types";
 export const BurgerMenu = ({ onClick, isOpened }) => {
   return (
     <div
-      className="burger flex ml:invisible flex-col justify-between items-end h-5 cursor-pointer"
+      className="burger flex ml:invisible flex-col justify-between items-end h-5 cursor-pointer select-none"
       onClick={onClick}
     >
       <span

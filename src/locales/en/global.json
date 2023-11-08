@@ -27,5 +27,362 @@
   },
   "brands": {
     "headerTitle": "Brands"
+  },
+  "about": {
+    "headerTitle": "About Espresso Station",
+    "paragraphs": [
+      "We prioritize our partners and clients in everything we do, focusing on meeting their needs by providing the finest tools, equipment, and devices from top global companies. We are committed to delivering post-sale services, including installation and warranty, to all our partners across the Kingdom of Saudi Arabia. Our experienced staff, with their extensive expertise and high skills, work diligently to ensure the provision of our services to you at the highest standards."
+    ]
+  },
+  "products": {
+    "headerTitle": "Products",
+    "menuOptions": [
+      {
+        "mainTitle": "Espresso Equipment",
+        "isDropDown": true,
+        "dropDownOption": ["Commercial", "Home"]
+      },
+      {
+        "mainTitle": "Grinders",
+        "isDropDown": true,
+        "dropDownOption": ["Home Grinders", "Commercial Grinders"]
+      },
+      {
+        "mainTitle": "Automatic Brewing",
+        "isDropDown": false
+      },
+      {
+        "mainTitle": "Ice Makers",
+        "isDropDown": false
+      },
+      {
+        "mainTitle": "Ovens",
+        "isDropDown": false
+      }
+    ],
+    "list": {
+      "equipmentCommercial": {
+        "arr": [
+          {
+            "title": "Rocket Espresso R9V",
+            "list": [
+              "The Rocket Espresso R9V machine from Rocket Espresso is one of the finest distinctive commercial espresso machines that provides a unique experience in the world of coffee making.",
+              "The R9V is characterized by an innovative design that allows individual control of the brewing processes with its multiple units, and includes features such as a 1.9 liter boiler and PID temperature control and shot timers and an automatic control set.",
+              "It comes with a magnetically controllable pump that provides multiple options to control brewing pressure and enhances the flexibility of the brewing process."
+            ],
+            "moreLink": "https://espressostation.co/ar/%D8%B1%D9%88%D9%83%D9%8A%D8%AA-R9V/p9358275",
+            "imgSrc": "9i.png"
+          },
+          {
+            "title": "Rocket Espresso R9",
+            "list": [
+              "The Rocket Espresso R9 espresso machine was chosen by engineer Ennio Berti to provide a distinctive experience in cafes around the world. It is characterized by an advanced design that ensures temperature stability of the machine using PID control in corrosion resistant stainless steel boilers.",
+              "Pressure transformer technology was used to reduce steam pressure recovery times, making it ideal for large cafes.",
+              "The digital display accurately shows boiler temperature and contains shot timers.",
+              "Each group head features a large, advanced brew boiler that makes the Rocket Espresso R9 an exceptional espresso machine with a polished steel design."
+            ],
+            "moreLink": "https://espressostation.co/ar/%D8%B1%D9%88%D9%83%D9%8A%D8%AA-%D8%A2%D9%84%D8%A79/p287023055",
+            "imgSrc": "r9b.png"
+          },
+          {
+            "title": "RE Doppia",
+            "list": [
+              "Fully saturated group",
+              "Autometon+cseing",
+              "Double boiler",
+              "Coffee boiler capacity 4 liters for 2 and 6.3 liters for 3",
+              "Steam boiler capacity 9 liters for 2 and 12 liters for 3",
+              "Number of available groups: 2|3|4"
+            ],
+            "moreLink": "https://espressostation.co/ar/%D8%AF%D9%88%D8%A8%D9%8A%D8%A7-%D8%B1%D9%88%D9%83%D9%8A%D8%AA/p391659254",
+            "imgSrc": "12.png"
+          },
+          {
+            "title": "STRADA AV",
+            "list": [
+              "Automatic volume measurement",
+              "Multiple boiler",
+              "1.3 liters per group",
+              "Steam boiler capacity 8.3 liters for 2 and 11.8 liters for 3",
+              "Number of available groups: 2|3|"
+            ],
+            "moreLink": "https://espressostation.co/ar/%D9%84%D8%A7%D9%85%D8%A7%D8%B1%D8%B2%D9%88%D9%83%D9%88-%D8%A7%D8%B3%D8%AA%D8%B1%D8%A7%D8%AF%D8%A7/p878652110",
+            "imgSrc": "11.png"
+          },
+          {
+            "title": "LA Marzocco GB5 X 3 GROUPS",
+            "list": [
+              "Dual boilers for performance stability and thermally insulated for safe use.",
+              "Equipped with PID system to control the temperature of the coffee boiler in each group and the steam boiler.",
+              "Rotary pump for more efficient performance.",
+              "Equipped with programmable buttons and volumetric dosing adjustment for espresso shots.",
+              "High performance and cool to the touch (insulated) steam wand.",
+              "Contains a digital control screen for easy access to all machine settings.",
+              "Equipped with two steam wands and two brewing groups."
+            ],
+            "moreLink": "https://espressostation.co/ar/%D9%84%D8%A7%D9%85%D8%A7%D8%B1%D8%B2%D9%88%D9%83%D9%88-%D8%A7%D8%B3%D8%AA%D8%B1%D8%A7%D8%AF%D8%A7/p68624968",
+            "imgSrc": "3.png"
+          },
+          {
+            "title": "SOTTO BANCO",
+            "list": [
+              "Technology: multiple boilers",
+              "Volume control: automatic",
+              "Boiler capacity: coffee boiler - 2 × 1.5 liters, main boiler - 9 liters",
+              "Design: stainless steel body"
+            ],
+            "moreLink": "https://espressostation.co/ar/%D8%A2%D9%84%D8%A9-%D8%A7%D9%84%D8%A7%D8%B3%D8%A8%D8%B1%D9%8A%D8%B3%D9%88-sotto-banco-%D8%A8%D9%85%D8%AC%D9%85%D9%88%D8%B9%D8%AA%D9%8A%D9%86-%D9%85%D9%86-%D8%B1%D9%88%D9%83%D9%8A%D8%AA/p1266444965",
+            "imgSrc": "5i.png"
+          }
+        ],
+        "moreLink": "#"
+      },
+      "equipmentHome": {
+        "arr": [
+          {
+            "title": "GS3 MPGS3 MP",
+            "list": [
+              "Mechanical arm for water control",
+              "Integrated internal pump for more efficient performance",
+              "Contains ruby flow regulators",
+              "Integrated internal pump for more efficient performance",
+              "Water preheating system"
+            ],
+            "moreLink": "https://espressostation.co/ar/gs3-mp-la-marzocco/p1691845633",
+            "imgSrc": "0.png"
+          },
+          {
+            "title": "Rocket Espresso Epica",
+            "list": [
+              "Stunning traditional classic design with the Epica espresso machine. Rocket has successfully combined modern technology and R Nine One features in a beautiful classic design. The otherwise saturated group has customized the Epica espresso machine for advanced commercial machines with a fully saturated group and a group head design that is more temperature stable than anything else. Manual pressure control is not just about the old design only with the Epica espresso machine the pressure lever can be used manually to control the changing pressure profile and fine tune pressures before and after the leak."
+            ],
+            "moreLink": "https://espressostation.co/ar/%D8%B1%D9%88%D9%83%D9%8A%D8%AA-%D8%A7%D8%A8%D9%8A%D9%83%D8%A7/p1492396299",
+            "imgSrc": "10.png"
+          }
+        ],
+        "moreLink": "#"
+      },
+      "grindersCommercial": {
+        "arr": [
+          {
+            "title": "MAHLKONIG E80 SUPREME",
+            "list": [
+              "The E80 Supreme coffee grinder is a high quality grinder designed for optimal extraction. It features special 80mm steel blades and a unique tooth design.",
+              "It comes with an extra strong 1800 gram bean hopper with finger protection, ensuring user safety.",
+              "It performs a fast grinding process at a rate of 6-7 grams per second, saving valuable time for the barista.",
+              "It contains an active cooling system to control the internal temperature and reduce thermal expansion."
+            ],
+            "moreLink": "https://espressostation.co/ar/%D9%85%D8%A7%D9%84%D9%83%D9%88%D9%86%D9%8A%D9%82-Mahlkonig/p2119117651",
+            "imgSrc": "T1.png"
+          },
+          {
+            "title": "MAHLKONIG E65 GBW",
+            "list": [
+              "The distance between the burr blades (DDD) function provides the ability to precisely adjust the degree of fineness based on the actual distance between the blades.",
+              "High quality blades are manufactured from reinforced steel, featuring 65mm blades that provide excellent performance in grinding beans.",
+              "The sturdy 1200 gram bean hopper with finger protection ensures user safety and features a smart clamp.",
+              "The motor is equipped with a distinctive cooling system and built-in fan to control the internal temperature.",
+              "High precision grinding technology allows fineness to be precisely adjusted to up to 600 microns.",
+              "The 3.5 inch colored screen facilitates control and use."
+            ],
+            "moreLink": "https://espressostation.co/ar/%D9%85%D8%A7%D9%84%D9%83%D9%88%D9%86%D9%8A%D9%82-Mahlkonig/p774351074",
+            "imgSrc": "T2.png"
+          },
+          {
+            "title": "Mahlkonig EK 43S",
+            "list": [
+              "The Mahlkonig EK 43S coffee grinder is considered an essential tool in the coffee world, providing precise and diverse grinding to prepare a variety of high quality coffee. It is characterized by high grinding capacity and large blades to improve temperature and provide grinding consistency. In addition, it contains flat blades that make setting adjustments easy and bean bag clips for user comfort. It gives cafe owners and coffee enthusiasts the ability to easily vary the texture and flavor of coffee and made it ideal for home use as well."
+            ],
+            "moreLink": "https://espressostation.co/ar/%D9%85%D8%A7%D9%84%D9%83%D9%88%D9%86%D9%8A%D9%82-mahlkoning/p913301691",
+            "imgSrc": "T3.png"
+          },
+          {
+            "title": "Anfim SP II",
+            "list": [
+              "The SP-II espresso grinder is designed for easy operation under intensive use. It allows grinding in one step and comes with dedicated titanium coated grinding discs and a double fan for temperature and noise control.",
+              "It provides easy grind adjustment and user friendly preset programming and precise timer.",
+              "It comes with an automatic on/off feature for convenience. The SP-II espresso grinder is the ideal choice for busy environments."
+            ],
+            "moreLink": "https://espressostation.co/ar/Anfim/p831949597",
+            "imgSrc": "T4.png"
+          },
+          {
+            "title": "F83 XGi PRO",
+            "list": [
+              "Fiorenzato's PRO technology is an innovative feature that allows easy cleaning and maintenance by separating the grinding chamber. It provides access to the burrs for replacement without losing grind settings.",
+              "This patented design makes maintenance easy for the barista without hassle.",
+              "EVO technology includes a cooling system to monitor motor temperature to protect coffee beans and ensure flavor preservation.",
+              "83mm flat M340 blades are precisely manufactured using CNC, making them wear resistant and easy to polish."
+            ],
+            "moreLink": "https://espressostation.co/ar/%D8%B7%D8%A7%D8%AD%D9%88%D9%86%D8%A9-%D8%A7%D9%84%D9%82%D9%87%D9%88%D8%A9-%D9%81%D9%8A%D9%88%D8%B1%D9%8A%D9%86%D8%B2%D8%A7%D8%AA%D9%88-f83-xgi-pro-%D8%A8%D8%A7%D9%84%D9%88%D8%B2%D9%86/p1957359038",
+            "imgSrc": "T5.png"
+          },
+          {
+            "title": "Eureka Helios 75",
+            "list": [
+              "The Helios 75 represents a new standard in the world of professional coffee grinders with 75mm blades and a 920 watt motor.",
+              "It delivers exceptional productivity, able to grind 8 grams of coffee per second. It is compact for ideal use in tight spaces.",
+              "It comes with an intuitive touch screen and multiple timer settings.",
+              "The hopper sensor automatically shuts off the grinder when the hopper is removed and resumes when properly replaced.",
+              "It comes with a two year warranty from Espresso Station."
+            ],
+            "moreLink": "https://espressostation.co/ar/%D9%8A%D9%88%D8%B1%D9%8A%D9%83%D8%A7-%D9%87%D9%8A%D9%84%D9%8A%D9%88%D8%B3/p1876923852",
+            "imgSrc": "T6.png"
+          }
+        ],
+        "moreLink": "#"
+      },
+      "grindersHome": {
+        "arr": [
+          {
+            "title": "Eureka Single Dose",
+            "list": [
+              "Equipped with 65mm professional flat burrs for consistent grinding.",
+              "ELR system for ideal declumping and near-zero retention.",
+              "Diamond Inside® technology effectively maintains coffee bean consistency.",
+              "Pneumatic blow up system for cleaning and stainless steel dosing cup.",
+              "Burr design suitable for espresso preparation and all coffee types.",
+              "Mignon Single Dose hopper designed for integrated coffee grinding.",
+              "High performance AC motor and high productivity.",
+              "Easy to operate and quiet technology for efficient grinding.",
+              "Exclusive design and elegant look with polished wood finishes.",
+              "Stepless micrometric grind adjustment and made in Italy to the highest quality standards."
+            ],
+            "moreLink": "https://espressostation.co/ar/%D9%8A%D9%88%D8%B1%D9%8A%D9%83%D8%A7-%D8%B3%D9%86%D9%82%D9%84-%D8%AF%D9%88%D8%B2/p455487940",
+            "imgSrc": "T7.png"
+          },
+          {
+            "title": "Quamar Sirio Q",
+            "list": [
+              "Category: Premium Coffee Grinder",
+              "The Sirio-Q introduces a revolutionary approach to coffee grinding, designed for baristas seeking a perfectly balanced and uniquely flavored coffee.",
+              "Years of research and continuous improvements have uncovered new methods, technologies, and parameters, emphasizing the importance of particle size and uniformity in ground coffee."
+            ],
+            "moreLink": "https://espressostation.co/ar/%D9%83%D9%88%D8%A7%D9%85%D8%A7%D8%B1-sirio-q/p1044054376",
+            "imgSrc": "T8.png"
+          },
+          {
+            "title": "Baratza Sette 270Wi",
+            "list": [
+              "Meet the Acaia City 270W coffee grinder, the first home grinder equipped with a built-in scale for direct grinding into a portafilter or coffee container. Its practical design ensures precise grinding and reduces coffee waste during grinding. Key features include a smart scale linked to the Acaia app, 30 grind settings with 9 fine adjustments, and a stainless steel conical burr (40mm) for even grinding. It comes with a 285g bean hopper capacity and 180g ground coffee container capacity, along with an efficient motor to preserve coffee freshness during grinding. It is also compact in size with standard dimensions (24 × 13 × 40 cm)."
+            ],
+            "moreLink": "https://espressostation.co/ar/%D8%A8%D8%B1%D8%A7%D8%AA%D8%B2%D8%A7-%D8%AF%D8%A8%D9%84%D9%8A%D9%88270/p2065869991",
+            "imgSrc": "T9.png"
+          },
+          {
+            "title": "Quamar T48e Grinder",
+            "list": [
+              "The T48E coffee grinder is equipped with electronic settings and an easy-to-use display screen, with 83mm flat burrs that can produce up to 8 kilograms of ground coffee daily, making it ideal for cafes and roasteries with high daily consumption. The grinder enabled electronic quantity control and comes with shot counters and fine grind adjustment. It can be equipped with various optional accessories, and there are eight color options available."
+            ],
+            "moreLink": "https://espressostation.co/ar/%D8%B7%D8%A7%D8%AD%D9%88%D9%86%D8%A9-%D9%83%D9%88%D8%A7%D9%85%D8%A7%D8%B1-t48e/p714443634",
+            "imgSrc": "T10.png"
+          }
+        ],
+        "moreLink": "#"
+      },
+      "automaticBrewing": {
+        "arr": [
+          {
+            "title": "iRhea SF",
+            "list": [
+              "iRHEA takes ground coffee, measures the weight, controls water temperature and time for automated brewing of filtered coffee.",
+              "Extremely small size yet high production capacity, highly mobile, can be mounted in any corner and infinitely scalable.",
+              "Consistent brew quality - consistent coffee taste regardless of operator experience or skills."
+            ],
+            "moreLink": "https://espressostation.co/ar/IRHEA/p295080529",
+            "imgSrc": "3i.png"
+          },
+          {
+            "title": "iRhea M3",
+            "list": [
+              "Extraction at different temperatures for each group.",
+              "Temperature can be controlled for each extraction step.",
+              "Ability to use all groups simultaneously in line with high number of orders.",
+              "Extraction in each group happens independently at the same time."
+            ],
+            "moreLink": "https://espressostation.co/ar/iRHEA/p708102066",
+            "imgSrc": "2i.png"
+          },
+          {
+            "title": "iRhea M5",
+            "list": [
+              "Each group in iRhea is equipped with an LCD screen allowing extraction conditions and recipes to be adjusted individually.",
+              "User grinds coffee and loads it into the machine, then selects preferred brewing recipe.",
+              "Water temperature is automatically set according to selected recipe to start process.",
+              "Extraction is automatically controlled via measuring extract weight, making coffee preparation easy and repeatable. The machine can handle high coffee order volumes and reduces need for extraction experts in the cafe."
+            ],
+            "moreLink": "https://espressostation.co/ar/iRHEA/p601564349",
+            "imgSrc": "4i.png"
+          },
+          {
+            "title": "CBS-2141XTS",
+            "list": [
+              "Durable and easy to clean stainless steel body",
+              "Productivity: Up to 3.9 gallons per hour",
+              "Hot water tank capacity: 3.3 gallons",
+              "Operates on Extractor® Touchscreen (ETOS) system",
+              "Revolutionary Sequential Dispense (CSD) dome resists mineral buildup in sprayhead"
+            ],
+            "moreLink": "https://espressostation.co/ar/%D8%A8%D8%A7%D9%82%D8%A9-%D9%82%D9%87%D9%88%D8%A9-%D8%A7%D9%84%D9%8A%D9%88%D9%85-%D9%84%D9%84%D9%85%D9%82%D8%A7%D9%87%D9%8A/p973793753",
+            "imgSrc": "5.png"
+          }
+        ],
+        "moreLink": "#"
+      },
+      "iceMakers": {
+        "arr": [
+          {
+            "title": "BWT BESTAQUA 14 ROC COFFEE",
+            "list": [
+              "Efficient water optimisation for the preparation of coffee and espresso",
+              "Standardised water for coffee, can be reproduced worldwide",
+              "Universal solution for every typical raw water and high water requirement",
+              "The coffee machine is safely protected against deposits such as limescale and gypsum"
+            ],
+            "moreLink": "https://espressostation.co/ar/%D8%B5%D8%A7%D9%86%D8%B9%D8%A7%D8%AA-%D8%A7%D9%84%D8%AB%D9%84%D8%AC-%D9%88%D9%86%D8%B8%D9%85-%D8%AA%D8%AD%D9%84%D9%8A%D8%A9-%D8%A7%D9%84%D9%85%D9%8A%D8%A7%D8%A9/c2087788360",
+            "imgSrc": "1.png"
+          }
+        ],
+        "moreLink": "#"
+      },
+      "ovens": {
+        "arr": [
+          {
+            "title": "STEFANIA LineMiss TM 3",
+            "list": [
+              "The LINEMISS TM oven line targets professionals looking for a high-productivity oven for pastries and bread while saving space.",
+              "The STEFANIA XFT113 oven provides heat and moisture manually for excellent pastry and bread making, rivaling large ovens.",
+              "Technical specifications include dimensions, weight, electrical power, available temperatures, and additional features like moisture removal and flexibility in heat management.",
+              "The oven is distinguished by simplicity and perfection, with uniform heat distribution and food coloring thanks to advanced thermal management techniques."
+            ],
+            "moreLink": "https://espressostation.co/ar/%D9%81%D8%B1%D9%86-%D8%AD%D8%B1%D8%A7%D8%B1%D9%8A-%D9%83%D9%87%D8%B1%D8%A8%D8%A7%D8%A6%D9%8A-3-%D8%B5%D9%88%D8%A7%D9%86%D9%8A-%D9%85%D9%86-%D8%A7%D9%88%D9%86%D9%83%D8%B3/p1113400193",
+            "imgSrc": "6i.png"
+          },
+          {
+            "title": "ARIANNA XFT133",
+            "list": [
+              "The LINEMISS TM oven line is designed for professionals and provides an electric heat and manual moisture oven with 4 trays 460x330 mm in size.",
+              "The oven offers thermal cooking with variable temperatures from 30 to 260°C, along with DRY.Plus and STEAM.Plus.",
+              "Temperature up to 260°C.",
+              "It is distinguished by simplicity and perfection in design and high quality. Dimensions: 600x655x509H mm, Weight: 31 kg, Electrical Power: 3 kW"
+            ],
+            "moreLink": "https://espressostation.co/ar/%D9%81%D8%B1%D9%86-%D8%AD%D8%B1%D8%A7%D8%B1%D9%8A-%D9%83%D9%87%D8%B1%D8%A8%D8%A7%D8%A6%D9%8A-4-%D8%B5%D9%88%D8%A7%D9%86%D9%8A-%D9%85%D9%86-%D8%A7%D9%88%D9%86%D9%83%D8%B3/p1692978500",
+            "imgSrc": "7i.png"
+          },
+          {
+            "title": "ROSSELLA XFT193",
+            "list": [
+              "The ROSSELLA LineMissTM oven is an electric heat oven with moisture option, designed for baking and pastry professionals.",
+              "It features advanced technologies like AIR.Plus for ideal air and heat distribution and DRY.Plus and STEAM.Plus moisture management technologies. It enables cooking at variable temperatures and comes equipped with 600 × 400 mm trays.",
+              "Simple, practical design with controllable moisture and temperatures. The oven is ideal for bakeries and pastry shops with performance resembling large ovens.",
+              "The oven is distinguished by simplicity and perfection, with uniform heat distribution and food coloring thanks to advanced thermal management techniques."
+            ],
+            "moreLink": "https://espressostation.co/ar/%D9%81%D8%B1%D9%86-%D8%AD%D8%B1%D8%A7%D8%B1%D9%8A-%D9%83%D9%87%D8%B1%D8%A8%D8%A7%D8%A6%D9%8A-4-%D8%B5%D9%88%D8%A7%D9%86%D9%8A-%D9%85%D9%86-%D8%A7%D9%88%D9%86%D9%83%D8%B3/p202798243",
+            "imgSrc": "8i.png"
+          }
+        ],
+        "moreLink": "#"
+      }
+    }
   }
 }
