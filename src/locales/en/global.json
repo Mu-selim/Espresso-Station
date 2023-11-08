@@ -392,5 +392,10 @@
       }
     }
   },
-  "customers": { "headerTitle": "Our Customers" }
+  "customers": { "headerTitle": "Our Customers" },
+  "footer": {
+    "link": "products",
+    "cities": "Riyadh, Al Khobar",
+    "copyRight": "All rights reserved © 2023 "
+  }
 }

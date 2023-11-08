@@ -396,5 +396,10 @@
       }
     }
   },
-  "customers": { "headerTitle": "عملاء أسبريسو ستيشن" }
+  "customers": { "headerTitle": "عملاء أسبريسو ستيشن" },
+  "footer": {
+    "link": "المعدات",
+    "cities": "الرياض,الخبر",
+    "copyRight": "حقوق النشر © 2023"
+  }
 }
