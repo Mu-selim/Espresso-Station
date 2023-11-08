@@ -20,5 +20,9 @@
       "name": "اتصل بنا",
       "link": "#contact"
     }
-  ]
+  ],
+  "heroSection": {
+    "title": "أسبريسو ستيشن",
+    "buttonText": "استكشف المزيد"
+  }
 }

@@ -20,5 +20,9 @@
       "name": "Contact Us",
       "link": "#contact-us"
     }
-  ]
+  ],
+  "heroSection": {
+    "title": "Espresso Station",
+    "buttonText": "Discover More"
+  }
 }
