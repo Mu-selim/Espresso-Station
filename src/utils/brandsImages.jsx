@@ -23,6 +23,7 @@ import image23 from "../assets/images/brands/22.webp";
 import image24 from "../assets/images/brands/23.webp";
 import image25 from "../assets/images/brands/24.webp";
 import image26 from "../assets/images/brands/25.webp";
+import image27 from "../assets/images/brands/26.webp";
 
 export default [
   image1,
@@ -50,4 +51,5 @@ export default [
   image24,
   image25,
   image26,
+  image27
 ];

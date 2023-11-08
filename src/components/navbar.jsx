@@ -2,6 +2,7 @@ import propTypes from "prop-types";
 import { useTranslation } from "react-i18next";
 import logo from "../assets/images/logo.webp";
 import { BurgerMenu } from "./burgerMenu";
+import { ChangeLang } from "./changeLang";
 
 const NavList = ({ distanceFromTop }) => {
   const { t: translate } = useTranslation("global");
@@ -26,6 +27,14 @@ const NavList = ({ distanceFromTop }) => {
 };
 
 export const Navbar = ({ distanceFromTop, isOpened, setIsOpened }) => {
+  const { i18n } = useTranslation("global");
+  const isAR = i18n.language.includes("ar") ? true : false;
+
+  const handleLanguageChange = (lang) => {
+    i18n.changeLanguage(lang.toLowerCase());
+    window.location.reload();
+  };
+
   return (
     <nav
       className={`flex justify-between items-center bg-gray-100 bg-opacity-70 py-3 px-6 rounded-xl transition-linear ${
@@ -40,7 +49,16 @@ export const Navbar = ({ distanceFromTop, isOpened, setIsOpened }) => {
         <img src={logo} alt="logo" className="w-full h-full" />
       </div>
       <NavList distanceFromTop={distanceFromTop} />
-      <BurgerMenu onClick={() => setIsOpened(!isOpened)} isOpened={isOpened} />
+      <BurgerMenu
+        onClick={() => setIsOpened(!isOpened)}
+        isOpened={isOpened}
+        className="flex ml:hidden flex-col justify-between items-end h-5 cursor-pointer select-none"
+      />
+      <ChangeLang
+        isAR={isAR}
+        handleLanguageChange={handleLanguageChange}
+        className="hidden ml:flex border-2 border-white w-fit rounded-md overflow-hidden font-bold relative"
+      />
     </nav>
   );
 };

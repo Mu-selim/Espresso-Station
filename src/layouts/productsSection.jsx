@@ -1,6 +1,5 @@
 import { useTranslation } from "react-i18next";
 import { SectionHeader } from "../components/sectionHeader";
-import { ProductsNavbar } from "../components/productsNavbar";
 import { useState } from "react";
 import { ProductsSideMenu } from "../components/sideMenu";
 import { ProductList } from "../components/productList";
@@ -19,7 +18,6 @@ export const ProductsSection = () => {
   return (
     <section className="pb-8 pt-24 px-8" id="products">
       <SectionHeader title={products.headerTitle} />
-      <ProductsNavbar />
       <div className="mt-8 text-coffee-darkest flex flex-col ml:flex-row gap-8">
         <ProductsSideMenu
           sideObj={{

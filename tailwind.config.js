@@ -29,6 +29,8 @@ export default {
         "coffee-dark": "#3c2b23",
         "coffee-darkest": "#353535",
         "coffee-header": "#a76e36",
+        "clr-bg-1": "#e7e7e7",
+        "clr-bg-2": "#f0f0f0",
       },
       fontFamily: {
         noto: ["Noto Kufi Arabic", "sans-serif"],

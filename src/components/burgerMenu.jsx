@@ -1,11 +1,8 @@
 import propTypes from "prop-types";
 
-export const BurgerMenu = ({ onClick, isOpened }) => {
+export const BurgerMenu = ({ onClick, isOpened, className }) => {
   return (
-    <div
-      className="burger flex ml:invisible flex-col justify-between items-end h-5 cursor-pointer select-none"
-      onClick={onClick}
-    >
+    <div className={className} onClick={onClick}>
       <span
         className={
           "w-8 h-1 bg-black rounded-full main-transition " +
@@ -31,4 +28,5 @@ export const BurgerMenu = ({ onClick, isOpened }) => {
 BurgerMenu.propTypes = {
   onClick: propTypes.func.isRequired,
   isOpened: propTypes.bool.isRequired,
+  className: propTypes.string.isRequired,
 };

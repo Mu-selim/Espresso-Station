@@ -2,21 +2,27 @@ import propTypes from "prop-types";
 import { CartIcon } from "../icons/cartIcon";
 import { NavArrowIcon } from "../icons/navArrowIcon";
 import { useTranslation } from "react-i18next";
+import { useState } from "react";
+import { BurgerMenu } from "./burgerMenu";
 
 export const ProductsSideMenu = ({ sideObj }) => {
   const { t: translate } = useTranslation("global");
   const products = translate("products", { returnObjects: true });
+  const [isOpened, setIsOpened] = useState(false);
 
   const handleListSelection = (listTitle) => sideObj.setProductList(listTitle);
 
   return (
     <aside className="ml:w-fit h-fit border-2 border-coffee-light rounded-xl whitespace-nowrap">
-      <header className="flex justify-center items-center gap-2 py-4 px-8 border-b-2 border-b-coffee-light bg-coffee-light">
-        <CartIcon className="w-8 h-8" fillColor="#353535" />
-        <h2 className="font-bold text-xl">{products.headerTitle}</h2>
+      <header className="flex justify-between ml:justify-center items-center gap-2 py-4 px-8  border-b-2 border-b-coffee-light bg-coffee-light">
+        <header className="flex items-center gap-2">
+          <CartIcon className="w-8 h-8" fillColor="#353535" />
+          <h2 className="font-bold text-xl">{products.headerTitle}</h2>
+        </header>
+        <BurgerMenu onClick={() => setIsOpened(!isOpened)} isOpened={isOpened} className="flex ml:hidden flex-col justify-between items-end h-5 cursor-pointer select-none" />
       </header>
-      <ul className="pt-4 pb-6 px-8 flex flex-col gap-4">
-        <li>
+      <ul className={`px-8 flex flex-col gap-4 overflow-hidden ${isOpened? "": "h-0 ml:h-auto"}`}>
+        <li className="pt-4">
           <div>
             <h3
               className="cursor-pointer flex items-center gap-1 font-bold"
@@ -95,7 +101,7 @@ export const ProductsSideMenu = ({ sideObj }) => {
           {products.menuOptions[3].mainTitle}
         </li>
         <li
-          className="cursor-pointer font-bold"
+          className="cursor-pointer font-bold pb-6"
           onClick={() => handleListSelection("ovens")}
         >
           {products.menuOptions[4].mainTitle}

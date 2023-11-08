@@ -8,7 +8,7 @@ export const AboutSection = () => {
   const about = translate("about", { returnObjects: true });
 
   return (
-    <section className="pb-8 pt-24 px-8" id="about">
+    <section className="pb-8 pt-24 px-8 bg-clr-bg-2" id="about">
       <SectionHeader title={about.headerTitle} />
       <div className="flex flex-col-reverse sm:flex-row mt-12 justify-evenly items-center gap-8">
         <div className="flex flex-col gap-6">
@@ -16,7 +16,10 @@ export const AboutSection = () => {
             return (
               <p
                 key={idx}
-                className="max-w-md text-sm xxs:text-lg md:text-xl 2xl:text-2xl text-center sm:text-start tracking-wider"
+                className="max-w-lg text-sm xxs:text-lg 2xl:text-2xl text-center sm:text-start tracking-wider"
+                style={{
+                  wordSpacing: "0.6rem",
+                }}
               >
                 {paragraph}
               </p>

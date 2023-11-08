@@ -9,8 +9,6 @@ export const ProductList = ({ productList }) => {
   const products = translate("products", { returnObjects: true });
   const list = products.list[productList];
 
-  console.log(list);
-
   return (
     <div className="border-2 border-coffee-light rounded-xl w-full overflow-hidden">
       <header className="flex justify-center items-center gap-2 py-4 px-8 border-b-2 border-b-coffee-light bg-coffee-light">
@@ -37,7 +35,7 @@ export const ProductList = ({ productList }) => {
                   />
                 </a>
               </div>
-              <div>
+              <div className="w-full">
                 <h3
                   className="text-2xl font-bold text-coffee-header mb-2"
                   style={{ textTransform: "capitalize" }}
@@ -54,7 +52,7 @@ export const ProductList = ({ productList }) => {
                     );
                   })}
                 </ul>
-                <div className="mt-6 mb-4 px-8 flex justify-end">
+                <div className="mt-6 mb-4 px-2 sm:px-8 flex justify-end">
                   <a
                     href={item.moreLink}
                     target="_blank"
@@ -69,6 +67,16 @@ export const ProductList = ({ productList }) => {
           );
         })}
       </main>
+      <div className="mt-2 mb-4 px-8 flex justify-center">
+        <a
+          href={list.moreLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-bold px-6 py-1 text-coffee-dark border border-coffee-dark rounded-full bg-coffee-light main-transition hover:bg-coffee-dark hover:text-coffee-light text-xs xxs:text-base whitespace-nowrap"
+        >
+          {isAR ? `تصفح جميع ${list.title}` : `see all the ${list.title}`}
+        </a>
+      </div>
     </div>
   );
 };
