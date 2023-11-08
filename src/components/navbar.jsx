@@ -8,7 +8,7 @@ const NavList = ({ distanceFromTop }) => {
   const navList = translate("mainNavbar", { returnObjects: true });
 
   return (
-    <ul className="hidden ml:flex items-center gap-4 ml:gap-6 xl:gap-8">
+    <ul className="hidden ml:flex items-center gap-4 ml:gap-6 xl:gap-8 select-none">
       {navList.map((item, idx) => (
         <li key={idx}>
           <a

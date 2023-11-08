@@ -1,8 +1,8 @@
 import { useTranslation } from "react-i18next";
-import { Navbar } from "./navbar";
+import { Navbar } from "../components/navbar";
 import { useEffect } from "react";
 import { useState } from "react";
-import { MobileNavList } from "./mobileNavList";
+import { MobileNavList } from "../components/mobileNavList";
 
 export const Header = () => {
   const { t: translate } = useTranslation("global");

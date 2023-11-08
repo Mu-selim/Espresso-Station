@@ -24,5 +24,8 @@
   "heroSection": {
     "title": "أسبريسو ستيشن",
     "buttonText": "استكشف المزيد"
+  },
+  "brands": {
+    "headerTitle": "العلامات التجاريه"
   }
 }

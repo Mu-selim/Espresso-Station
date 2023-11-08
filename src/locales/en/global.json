@@ -24,5 +24,8 @@
   "heroSection": {
     "title": "Espresso Station",
     "buttonText": "Discover More"
+  },
+  "brands": {
+    "headerTitle": "Brands"
   }
 }

@@ -1,7 +1,7 @@
 import propTypes from "prop-types";
 
 export const LazyImage = ({ src, alt, className }) => {
-  return <img className={className} data-src={src} alt={alt} loading="lazy" />;
+  return <img className={className} src={src} alt={alt} loading="lazy" />;
 };
 
 LazyImage.propTypes = {

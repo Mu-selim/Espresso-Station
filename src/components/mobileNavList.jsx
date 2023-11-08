@@ -1,14 +1,13 @@
 import propTypes from "prop-types";
-import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
 export const MobileNavList = ({ navList, isOpened }) => {
   const { i18n } = useTranslation("global");
-  const [isAR, setIsAR] = useState(i18n.language.includes("ar") ? true : false);
+  const isAR = i18n.language.includes("ar") ? true : false;
 
   const handleLanguageChange = (lang) => {
     i18n.changeLanguage(lang.toLowerCase());
-    setIsAR(lang === "ar" ? true : false);
+    window.location.reload();
   };
 
   return (
