@@ -1,1 +1,24 @@
-{}
+{
+  "mainNavbar": [
+    {
+      "name": "الرئيسية",
+      "link": "#"
+    },
+    {
+      "name": "العلامات التجارية",
+      "link": "#brands"
+    },
+    {
+      "name": "عن اسبريسو ستيشن",
+      "link": "#about"
+    },
+    {
+      "name": "منتجاتنا",
+      "link": "#products"
+    },
+    {
+      "name": "اتصل بنا",
+      "link": "#contact"
+    }
+  ]
+}

@@ -1,1 +1,24 @@
-{}
+{
+  "mainNavbar": [
+    {
+      "name": "Home",
+      "link": "#"
+    },
+    {
+      "name": "Brands",
+      "link": "#brands"
+    },
+    {
+      "name": "About",
+      "link": "#about"
+    },
+    {
+      "name": "Products",
+      "link": "#products"
+    },
+    {
+      "name": "Contact Us",
+      "link": "#contact-us"
+    }
+  ]
+}
