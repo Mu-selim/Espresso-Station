@@ -24,7 +24,7 @@ export const HeroSection = () => {
           href="/"
           target="_blank"
           rel="noopener noreferrer"
-          className="w-fit px-6 py-2 font-bold rounded-full border-4 border-white text-coffee-dark bg-coffee-light hover:text-coffee-light hover:bg-coffee-dark main-transition text-xs xxs:text-base 2xl:text-xl whitespace-nowrap"
+          className="w-fit px-6 py-2 font-bold rounded-full border-4 border-white text-coffee bg-coffee-light hover:text-coffee-light hover:bg-coffee-dark main-transition text-xs xxs:text-base 2xl:text-xl whitespace-nowrap"
         >
           {hero.buttonText}
         </a>

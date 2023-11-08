@@ -31,7 +31,7 @@ export const ProductList = ({ productList }) => {
                   className="w-48 h-fit overflow-hidden"
                 >
                   <LazyImage
-                    src={`/src/assets/images/products/${item.imgSrc}`}
+                    src={`/products/${item.imgSrc}`}
                     alt={item.title}
                     className="w-full hover:scale-110 main-transition"
                   />
