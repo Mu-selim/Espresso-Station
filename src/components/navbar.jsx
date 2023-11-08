@@ -5,7 +5,7 @@ import { BurgerMenu } from "./burgerMenu";
 
 const NavList = ({ distanceFromTop }) => {
   const { t: translate } = useTranslation("global");
-  const [navList] = translate("mainNavbar", { returnObjects: true });
+  const navList = translate("mainNavbar", { returnObjects: true });
 
   return (
     <ul className="hidden ml:flex items-center gap-4 ml:gap-6 xl:gap-8">
