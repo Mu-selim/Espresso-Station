@@ -19,7 +19,7 @@ export const ProductList = ({ productList }) => {
           return (
             <div
               key={idx}
-              className="flex flex-col items-center px-6 sm:flex-row sm:items-start sm:px-0 pb-4 pt-6 gap-2"
+              className="flex flex-col items-center px-4 sm:flex-row sm:items-start pb-4 pt-6 gap-2"
             >
               <div className="w-48 min-w-[12rem] ml:min-w-[15rem] p-4">
                 <a
@@ -52,7 +52,7 @@ export const ProductList = ({ productList }) => {
                     );
                   })}
                 </ul>
-                <div className="mt-6 mb-4 px-2 sm:px-8 flex justify-end">
+                <div className="mt-6 mb-2 px-2 sm:px-8 flex justify-end">
                   <a
                     href={item.moreLink}
                     target="_blank"
@@ -72,7 +72,7 @@ export const ProductList = ({ productList }) => {
           href={list.moreLink}
           target="_blank"
           rel="noopener noreferrer"
-          className="font-bold px-6 py-1 text-coffee-dark border border-coffee-dark rounded-full bg-coffee-light main-transition hover:bg-coffee-dark hover:text-coffee-light text-xs xxs:text-base whitespace-nowrap"
+          className="font-bold px-6 py-1 text-coffee-dark border border-coffee-dark rounded-full bg-coffee-light main-transition hover:bg-coffee-dark hover:text-coffee-light text-xs xs:text-base whitespace-nowrap"
         >
           {isAR ? `تصفح جميع ${list.title}` : `see all the ${list.title}`}
         </a>
