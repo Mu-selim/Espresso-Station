@@ -20,7 +20,7 @@ export const ProductsSection = () => {
     <section className="pb-8 pt-24 px-8" id="products">
       <SectionHeader title={products.headerTitle} />
       <ProductsNavbar />
-      <div className="mt-8 text-coffee-darkest">
+      <div className="mt-8 text-coffee-darkest flex flex-col ml:flex-row gap-8">
         <ProductsSideMenu
           sideObj={{
             dropDown1,
