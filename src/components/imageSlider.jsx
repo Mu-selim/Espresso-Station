@@ -8,19 +8,52 @@ import { useTranslation } from "react-i18next";
 import { useEffect } from "react";
 
 const ImagesContainer = ({ slide }) => {
+  const createSubImages = (array, chunkSize) => {
+    const res = [];
+    for (let i = 0; i < array.length; i += chunkSize) {
+      res.push(array.slice(i, i + chunkSize));
+    }
+    return res;
+  };
+
+  const subImages = createSubImages(slide, 4);
+  const remain = subImages[subImages.length - 1].length < 4? subImages.pop(): [];
+
   return (
-    <div className="w-full grid grid-cols-3 md:grid-cols-4 2xl:grid-cols-5 gap-12">
-      {slide.map((image, idx) => {
+    <div className="w-full flex flex-col justify-center items-center gap-12">
+      {subImages.map((sub, idx) => {
         return (
-          <div key={idx} className="">
-            <LazyImage
-              src={image}
-              alt="brand"
-              className="w-full h-full object-contain pointer-events-none"
-            />
+          <div
+            key={idx}
+            className="w-full flex justify-between items-center gap-4 sm:gap-12"
+          >
+            {sub.map((image, idx) => {
+              return (
+                <div key={idx} className="">
+                  <LazyImage
+                    src={image}
+                    alt="brand"
+                    className="w-full max-w-[6rem] pointer-events-none"
+                  />
+                </div>
+              );
+            })}
           </div>
         );
       })}
+      <div className="w-full flex justify-center items-center xl:justify-evenly gap-8 sm:gap-12">
+        {remain.map((image, idx) => {
+          return (
+            <div key={idx} className="">
+              <LazyImage
+                src={image}
+                alt="brand"
+                className="w-12 xs:w-20 sm:w-full max-w-[6rem] pointer-events-none"
+              />
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 };
@@ -33,8 +66,8 @@ export const ImageSlider = () => {
   useEffect(() => {}, [i18n.language]);
 
   return (
-    <div className="my-4 mx-4 sm:mx-8 py-8 flex justify-center">
-      <div className="overflow-hidden max-w-3xl 2xl:max-w-7xl px-4 sm:px-12">
+    <div className="my-4 sm:mx-8 py-8 flex justify-center">
+      <div className="overflow-hidden max-w-5xl 2xl:max-w-7xl px-4 sm:px-12">
         <Swiper
           dir={i18n.language.includes("ar".toLowerCase()) ? "rtl" : "ltr"}
           slidesPerView={1}

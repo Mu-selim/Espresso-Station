@@ -52,6 +52,10 @@
         "isDropDown": false
       },
       {
+        "mainTitle": "Water Desalination",
+        "isDropDown": false
+      },
+      {
         "mainTitle": "Ice Makers",
         "isDropDown": false
       },
@@ -332,6 +336,11 @@
             "imgSrc": "5.webp"
           }
         ],
+        "moreLink": "#"
+      },
+      "waterDesalination": {
+        "title": "نظم تحلية المياه",
+        "arr": [],
         "moreLink": "#"
       },
       "iceMakers": {

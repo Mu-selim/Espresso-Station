@@ -10,73 +10,83 @@ export const ProductList = ({ productList }) => {
   const list = products.list[productList];
 
   return (
-    <div className="border-2 border-coffee-light rounded-xl w-full overflow-hidden">
+    <div className="border-2 border-coffee-light rounded-xl w-full h-fit overflow-hidden">
       <header className="flex justify-center items-center gap-2 py-4 px-8 border-b-2 border-b-coffee-light bg-coffee-light">
         <h2 className="font-bold text-xl">{list.title}</h2>
       </header>
-      <main className="flex flex-col divide-y-4">
-        {list.arr.map((item, idx) => {
-          return (
-            <div
-              key={idx}
-              className="flex flex-col items-center px-4 sm:flex-row sm:items-start pb-4 pt-6 gap-2"
-            >
-              <div className="w-48 min-w-[12rem] ml:min-w-[15rem] p-4">
-                <a
-                  href={item.moreLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-48 h-fit overflow-hidden"
+      {list.arr.length === 0 ? (
+        <div className="flex justify-center items-center h-48">
+          <p className="text-xl font-bold text-coffee-dark">
+            {isAR ? "لا يوجد منتجات" : "No products"}
+          </p>
+        </div>
+      ) : (
+        <>
+          <main className="flex flex-col divide-y-4">
+            {list.arr.map((item, idx) => {
+              return (
+                <div
+                  key={idx}
+                  className="flex flex-col items-center px-4 sm:flex-row sm:items-start pb-4 pt-6 gap-2"
                 >
-                  <LazyImage
-                    src={`/products/${item.imgSrc}`}
-                    alt={item.title}
-                    className="w-full hover:scale-110 main-transition"
-                  />
-                </a>
-              </div>
-              <div className="w-full">
-                <h3
-                  className="text-2xl font-bold text-coffee-header mb-2"
-                  style={{ textTransform: "capitalize" }}
-                >
-                  {item.title}
-                </h3>
-                <ul>
-                  {item.list.map((item, idx) => {
-                    return (
-                      <li key={idx} className="mb-2 flex gap-1">
-                        <CheckCircleIcon className="min-w-[1.2rem] translate-y-1.5" />
-                        <p className="max-w-lg">{item}</p>
-                      </li>
-                    );
-                  })}
-                </ul>
-                <div className="mt-6 mb-2 px-2 sm:px-8 flex justify-end">
-                  <a
-                    href={item.moreLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="font-bold px-6 py-1 text-coffee-dark border border-coffee-dark rounded-full bg-coffee-light main-transition hover:bg-coffee-dark hover:text-coffee-light"
-                  >
-                    {isAR ? "عرض المزيد" : "Show More"}
-                  </a>
+                  <div className="w-48 min-w-[12rem] ml:min-w-[15rem] p-4">
+                    <a
+                      href={item.moreLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-48 h-fit overflow-hidden"
+                    >
+                      <LazyImage
+                        src={`/products/${item.imgSrc}`}
+                        alt={item.title}
+                        className="w-full hover:scale-110 main-transition"
+                      />
+                    </a>
+                  </div>
+                  <div className="w-full">
+                    <h3
+                      className="text-2xl font-bold text-coffee-header mb-2"
+                      style={{ textTransform: "capitalize" }}
+                    >
+                      {item.title}
+                    </h3>
+                    <ul>
+                      {item.list.map((item, idx) => {
+                        return (
+                          <li key={idx} className="mb-2 flex gap-1">
+                            <CheckCircleIcon className="min-w-[1.2rem] translate-y-1.5" />
+                            <p className="max-w-lg">{item}</p>
+                          </li>
+                        );
+                      })}
+                    </ul>
+                    <div className="mt-6 mb-2 px-2 sm:px-8 flex justify-end">
+                      <a
+                        href={item.moreLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-bold px-6 py-1 text-coffee-dark border border-coffee-dark rounded-full bg-coffee-light main-transition hover:bg-coffee-dark hover:text-coffee-light"
+                      >
+                        {isAR ? "عرض المزيد" : "Show More"}
+                      </a>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-          );
-        })}
-      </main>
-      <div className="mt-2 mb-4 px-8 flex justify-center">
-        <a
-          href={list.moreLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="font-bold px-6 py-1 text-coffee-dark border border-coffee-dark rounded-full bg-coffee-light main-transition hover:bg-coffee-dark hover:text-coffee-light text-xs xs:text-base whitespace-nowrap"
-        >
-          {isAR ? `تصفح جميع ${list.title}` : `see all the ${list.title}`}
-        </a>
-      </div>
+              );
+            })}
+          </main>
+          <div className="mt-2 mb-4 px-8 flex justify-center">
+            <a
+              href={list.moreLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-bold px-6 py-1 text-coffee-dark border border-coffee-dark rounded-full bg-coffee-light main-transition hover:bg-coffee-dark hover:text-coffee-light text-xs xs:text-base whitespace-nowrap"
+            >
+              {isAR ? `تصفح جميع ${list.title}` : `see all the ${list.title}`}
+            </a>
+          </div>
+        </>
+      )}
     </div>
   );
 };

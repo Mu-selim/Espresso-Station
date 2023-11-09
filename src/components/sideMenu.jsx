@@ -19,9 +19,17 @@ export const ProductsSideMenu = ({ sideObj }) => {
           <CartIcon className="w-8 h-8" fillColor="#353535" />
           <h2 className="font-bold text-xl">{products.headerTitle}</h2>
         </header>
-        <BurgerMenu onClick={() => setIsOpened(!isOpened)} isOpened={isOpened} className="flex ml:hidden flex-col justify-between items-end h-5 cursor-pointer select-none" />
+        <BurgerMenu
+          onClick={() => setIsOpened(!isOpened)}
+          isOpened={isOpened}
+          className="flex ml:hidden flex-col justify-between items-end h-5 cursor-pointer select-none"
+        />
       </header>
-      <ul className={`px-8 flex flex-col gap-4 overflow-hidden ${isOpened? "": "h-0 ml:h-auto"}`}>
+      <ul
+        className={`px-8 flex flex-col gap-4 overflow-hidden ${
+          isOpened ? "" : "h-0 ml:h-auto"
+        }`}
+      >
         <li className="pt-4">
           <div>
             <h3
@@ -96,15 +104,21 @@ export const ProductsSideMenu = ({ sideObj }) => {
         </li>
         <li
           className="cursor-pointer font-bold"
-          onClick={() => handleListSelection("iceMakers")}
+          onClick={() => handleListSelection("waterDesalination")}
         >
           {products.menuOptions[3].mainTitle}
+        </li>
+        <li
+          className="cursor-pointer font-bold"
+          onClick={() => handleListSelection("iceMakers")}
+        >
+          {products.menuOptions[4].mainTitle}
         </li>
         <li
           className="cursor-pointer font-bold pb-6"
           onClick={() => handleListSelection("ovens")}
         >
-          {products.menuOptions[4].mainTitle}
+          {products.menuOptions[5].mainTitle}
         </li>
       </ul>
     </aside>

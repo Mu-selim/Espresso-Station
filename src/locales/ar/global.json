@@ -52,11 +52,15 @@
         "isDropDown": false
       },
       {
-        "mainTitle": "صانعات الثلج",
+        "mainTitle": "أنظمة تحلية المياه",
         "isDropDown": false
       },
       {
-        "mainTitle": "الأفران",
+        "mainTitle": "حلول التبريد",
+        "isDropDown": false
+      },
+      {
+        "mainTitle": "معدات المخابز",
         "isDropDown": false
       }
     ],
@@ -338,8 +342,13 @@
         ],
         "moreLink": "#"
       },
+      "waterDesalination": {
+        "title": "نظم تحلية المياه",
+        "arr": [],
+        "moreLink": "#"
+      },
       "iceMakers": {
-        "title": "ماكينات الثلج",
+        "title": "حلول التبريد",
         "arr": [
           {
             "title": "BWT BESTAQUA 14 ROC COFFEE",
