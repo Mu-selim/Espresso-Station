@@ -84,7 +84,9 @@ export const ProductList = ({ productList }) => {
                       rel="noopener noreferrer"
                       className="font-bold px-6 py-1 text-coffee-dark border border-coffee-dark rounded-full bg-coffee-light main-transition hover:bg-coffee-dark hover:text-coffee-light cursor-pointer"
                     >
-                      {isAR ? `عرض جميع ${brand.title}` : "Show More"}
+                      {isAR
+                        ? `عرض جميع ${brand.title}`
+                        : `View all ${brand.title}`}
                     </a>
                   </div>
                 </div>

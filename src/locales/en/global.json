@@ -226,105 +226,11 @@
       },
       "grindersHome": {
         "title": "Home Grinders",
-        "arr": [
-          {
-            "title": "Eureka Single Dose",
-            "list": [
-              "Equipped with 65mm professional flat burrs for consistent grinding.",
-              "ELR system for ideal declumping and near-zero retention.",
-              "Diamond Inside® technology effectively maintains coffee bean consistency.",
-              "Pneumatic blow up system for cleaning and stainless steel dosing cup.",
-              "Burr design suitable for espresso preparation and all coffee types.",
-              "Mignon Single Dose hopper designed for integrated coffee grinding.",
-              "High performance AC motor and high productivity.",
-              "Easy to operate and quiet technology for efficient grinding.",
-              "Exclusive design and elegant look with polished wood finishes.",
-              "Stepless micrometric grind adjustment and made in Italy to the highest quality standards."
-            ],
-            "moreLink": "https://espressostation.co/ar/%D9%8A%D9%88%D8%B1%D9%8A%D9%83%D8%A7-%D8%B3%D9%86%D9%82%D9%84-%D8%AF%D9%88%D8%B2/p455487940",
-            "imgSrc": "T7.webp"
-          },
-          {
-            "title": "Quamar Sirio Q",
-            "list": [
-              "Category: Premium Coffee Grinder",
-              "The Sirio-Q introduces a revolutionary approach to coffee grinding, designed for baristas seeking a perfectly balanced and uniquely flavored coffee.",
-              "Years of research and continuous improvements have uncovered new methods, technologies, and parameters, emphasizing the importance of particle size and uniformity in ground coffee."
-            ],
-            "moreLink": "https://espressostation.co/ar/%D9%83%D9%88%D8%A7%D9%85%D8%A7%D8%B1-sirio-q/p1044054376",
-            "imgSrc": "T8.webp"
-          },
-          {
-            "title": "Baratza Sette 270Wi",
-            "list": [
-              "Meet the Acaia City 270W coffee grinder, the first home grinder equipped with a built-in scale for direct grinding into a portafilter or coffee container. Its practical design ensures precise grinding and reduces coffee waste during grinding. Key features include a smart scale linked to the Acaia app, 30 grind settings with 9 fine adjustments, and a stainless steel conical burr (40mm) for even grinding. It comes with a 285g bean hopper capacity and 180g ground coffee container capacity, along with an efficient motor to preserve coffee freshness during grinding. It is also compact in size with standard dimensions (24 × 13 × 40 cm)."
-            ],
-            "moreLink": "https://espressostation.co/ar/%D8%A8%D8%B1%D8%A7%D8%AA%D8%B2%D8%A7-%D8%AF%D8%A8%D9%84%D9%8A%D9%88270/p2065869991",
-            "imgSrc": "T9.webp"
-          },
-          {
-            "title": "Quamar T48e Grinder",
-            "list": [
-              "The T48E coffee grinder is equipped with electronic settings and an easy-to-use display screen, with 83mm flat burrs that can produce up to 8 kilograms of ground coffee daily, making it ideal for cafes and roasteries with high daily consumption. The grinder enabled electronic quantity control and comes with shot counters and fine grind adjustment. It can be equipped with various optional accessories, and there are eight color options available."
-            ],
-            "moreLink": "https://espressostation.co/ar/%D8%B7%D8%A7%D8%AD%D9%88%D9%86%D8%A9-%D9%83%D9%88%D8%A7%D9%85%D8%A7%D8%B1-t48e/p714443634",
-            "imgSrc": "T10.webp"
-          }
-        ],
-        "moreLink": "#"
+        "brand": []
       },
       "automaticBrewing": {
         "title": "Automatic Brewing",
-        "brand": [
-          {
-            "title": "La Marzocco",
-            "link": "#",
-            "productList": [
-              {
-                "title": "Rocket Espresso R9V",
-                "link": "#",
-                "imgSrc": "9i.webp",
-                "description": [
-                  "The Rocket Espresso R9V machine from Rocket Espresso is one of the finest distinctive commercial espresso machines that provides a unique experience in the world of coffee making.",
-                  "The R9V is characterized by an innovative design that allows individual control of the brewing processes with its multiple units, and includes features such as a 1.9 liter boiler and PID temperature control and shot timers and an automatic control set."
-                ]
-              },
-              {
-                "title": "Rocket Espresso R9V",
-                "link": "#",
-                "imgSrc": "9i.webp",
-                "description": [
-                  "The Rocket Espresso R9V machine from Rocket Espresso is one of the finest distinctive commercial espresso machines that provides a unique experience in the world of coffee making.",
-                  "The R9V is characterized by an innovative design that allows individual control of the brewing processes with its multiple units, and includes features such as a 1.9 liter boiler and PID temperature control and shot timers and an automatic control set."
-                ]
-              }
-            ]
-          },
-          {
-            "title": "La Marzocco",
-            "link": "#",
-            "productList": [
-              {
-                "title": "Rocket Espresso R9V",
-                "link": "#",
-                "imgSrc": "9i.webp",
-                "description": [
-                  "The Rocket Espresso R9V machine from Rocket Espresso is one of the finest distinctive commercial espresso machines that provides a unique experience in the world of coffee making.",
-                  "The R9V is characterized by an innovative design that allows individual control of the brewing processes with its multiple units, and includes features such as a 1.9 liter boiler and PID temperature control and shot timers and an automatic control set."
-                ]
-              },
-              {
-                "title": "Rocket Espresso R9V",
-                "link": "#",
-                "imgSrc": "9i.webp",
-                "description": [
-                  "The Rocket Espresso R9V machine from Rocket Espresso is one of the finest distinctive commercial espresso machines that provides a unique experience in the world of coffee making.",
-                  "The R9V is characterized by an innovative design that allows individual control of the brewing processes with its multiple units, and includes features such as a 1.9 liter boiler and PID temperature control and shot timers and an automatic control set."
-                ]
-              }
-            ]
-          }
-        ]
+        "brand": []
       },
       "waterDesalination": {
         "title": "Water Desalination Systems",
