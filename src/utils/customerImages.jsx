@@ -1,4 +1,3 @@
-
 import img2 from "../assets/images/customers/02.webp";
 import img3 from "../assets/images/customers/03.webp";
 import img4 from "../assets/images/customers/04.webp";
@@ -12,7 +11,6 @@ import img12 from "../assets/images/customers/12.webp";
 import img13 from "../assets/images/customers/13.webp";
 
 export const customerImages = [
-
   { img: img2, link: "#" },
   { img: img3, link: "#" },
   { img: img4, link: "#" },

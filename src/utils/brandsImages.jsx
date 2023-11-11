@@ -27,29 +27,86 @@ import image27 from "../assets/images/brands/26.webp";
 
 export default [
   { img: image1, link: "https://espressostation.co/ar/irhea/brand-661493699" },
-  { img: image2, link: "https://espressostation.co/ar/ROCKET-ESPRESSO-MILANO/brand-151121469" },
-  { img: image4, link: "https://espressostation.co/ar/La-marzocco/brand-1999061827" },
-  { img: image5, link: "https://espressostation.co/ar/%D9%81%D8%AA%D9%83%D9%88-fetco/brand-877564021" },
-  { img: image6, link: "https://espressostation.co/ar/eureka-oro/brand-2099428466" },
+  {
+    img: image2,
+    link: "https://espressostation.co/ar/ROCKET-ESPRESSO-MILANO/brand-151121469",
+  },
+  {
+    img: image4,
+    link: "https://espressostation.co/ar/La-marzocco/brand-1999061827",
+  },
+  {
+    img: image5,
+    link: "https://espressostation.co/ar/%D9%81%D8%AA%D9%83%D9%88-fetco/brand-877564021",
+  },
+  {
+    img: image6,
+    link: "https://espressostation.co/ar/eureka-oro/brand-2099428466",
+  },
   { img: image7, link: "https://espressostation.co/ar/anifm/brand-1979945863" },
-  { img: image8, link: "https://espressostation.co/ar/%D9%85%D8%A7%D9%84%D9%83%D9%88%D9%86%D9%8A%D9%82-Mahlkonig/brand-73827397" },
+  {
+    img: image8,
+    link: "https://espressostation.co/ar/%D9%85%D8%A7%D9%84%D9%83%D9%88%D9%86%D9%8A%D9%82-Mahlkonig/brand-73827397",
+  },
   { img: image9, link: "#" },
-  { img: image10, link: "https://espressostation.co/ar/Fiorenzato/brand-2120200796" },
-  { img: image11, link: "https://espressostation.co/ar/QUAMAR-%D9%83%D9%88%D8%A7%D9%85%D8%A7%D8%B1/brand-870058083" },
-  { img: image12, link: "https://espressostation.co/ar/blendtec/brand-664844392" },
+  {
+    img: image10,
+    link: "https://espressostation.co/ar/Fiorenzato/brand-2120200796",
+  },
+  {
+    img: image11,
+    link: "https://espressostation.co/ar/QUAMAR-%D9%83%D9%88%D8%A7%D9%85%D8%A7%D8%B1/brand-870058083",
+  },
+  {
+    img: image12,
+    link: "https://espressostation.co/ar/blendtec/brand-664844392",
+  },
   { img: image13, link: "https://espressostation.co/ar/OUNX/brand-559911320" },
   { img: image14, link: "#" },
   { img: image15, link: "#" },
   { img: image16, link: "#" },
-  { img: image17, link: "https://espressostation.co/ar/puq-press/brand-1004735414" },
-  { img: image18, link: "https://espressostation.co/ar/acaia/brand-1648520897" },
-  { img: image19, link: "https://espressostation.co/ar/hario/brand-1957888454" },
-  { img: image20, link: "https://espressostation.co/ar/%D8%A8%D8%B1%D9%88%D9%8A%D8%B3%D8%AA%D8%A7/brand-552174156" },
-  { img: image21, link: "https://espressostation.co/ar/baratza/brand-1797631004" },
-  { img: image22, link: "https://espressostation.co/ar/cafetto/brand-1799212748" },
-  { img: image23, link: "https://espressostation.co/ar/chemex/brand-767589890" },
-  { img: image24, link: "https://espressostation.co/ar/puly-caff/brand-1093370853" },
-  { img: image25, link: "https://espressostation.co/ar/rhinowares/brand-1268459162" },
-  { img: image26, link: "https://espressostation.co/ar/rhinowares/brand-1268459162" },
-  { img: image27, link: "https://espressostation.co/ar/motta/brand-2106937105" },
+  {
+    img: image17,
+    link: "https://espressostation.co/ar/puq-press/brand-1004735414",
+  },
+  {
+    img: image18,
+    link: "https://espressostation.co/ar/acaia/brand-1648520897",
+  },
+  {
+    img: image19,
+    link: "https://espressostation.co/ar/hario/brand-1957888454",
+  },
+  {
+    img: image20,
+    link: "https://espressostation.co/ar/%D8%A8%D8%B1%D9%88%D9%8A%D8%B3%D8%AA%D8%A7/brand-552174156",
+  },
+  {
+    img: image21,
+    link: "https://espressostation.co/ar/baratza/brand-1797631004",
+  },
+  {
+    img: image22,
+    link: "https://espressostation.co/ar/cafetto/brand-1799212748",
+  },
+  {
+    img: image23,
+    link: "https://espressostation.co/ar/chemex/brand-767589890",
+  },
+  {
+    img: image24,
+    link: "https://espressostation.co/ar/puly-caff/brand-1093370853",
+  },
+  {
+    img: image25,
+    link: "https://espressostation.co/ar/rhinowares/brand-1268459162",
+  },
+  {
+    img: image26,
+    link: "https://espressostation.co/ar/rhinowares/brand-1268459162",
+  },
+  {
+    img: image27,
+    link: "https://espressostation.co/ar/motta/brand-2106937105",
+  },
 ];
