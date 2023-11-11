@@ -25,12 +25,12 @@ export const ProductList = ({ productList }) => {
           {list.brand.map((brand, idx) => {
             return (
               <div key={idx} className="flex flex-col px-4">
-                <header className="pt-5 text-2xl font-bold text-coffee-header select-none">
+                <header className="pt-5 text-2xl font-bold text-zinc-600 select-none">
                   <h3 className="w-full text-center underline underline-offset-4">
                     {brand.title}
                   </h3>
                 </header>
-                <div className="flex flex-col -mt-4">
+                <div className="flex flex-col mt-4 gap-4">
                   {brand.productList.map((product, idx) => {
                     return (
                       <div
@@ -66,7 +66,7 @@ export const ProductList = ({ productList }) => {
                           <ul>
                             {product.description.map((item, idx) => {
                               return (
-                                <li key={idx} className="mb-1 flex gap-1">
+                                <li key={idx} className="mb-3 flex gap-1">
                                   <CheckCircleIcon className="min-w-[1rem] translate-y-0.5" />
                                   <p className="max-w-lg text-sm">{item}</p>
                                 </li>
@@ -82,7 +82,7 @@ export const ProductList = ({ productList }) => {
                       href={brand.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="font-bold px-6 py-1 text-coffee-dark border border-coffee-dark rounded-full bg-coffee-light main-transition hover:bg-coffee-dark hover:text-coffee-light cursor-pointer"
+                      className="font-bold px-6 py-1 text-black border border-black rounded-full bg-coffee-light bg-opacity-60 main-transition hover:bg-coffee hover:bg-opacity-70 hover:text-white cursor-pointer"
                     >
                       {isAR
                         ? `عرض جميع ${brand.title}`

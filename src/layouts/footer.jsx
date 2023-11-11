@@ -7,19 +7,19 @@ export const Footer = () => {
   const footer = translate("footer", { returnObjects: true });
 
   return (
-    <footer className="w-full max-w-screen-2xl mx-auto px-4 sm:px-8 pt-6 pb-2 bg-[#9a8f85]">
-      <div className="flex flex-col sm:flex-row justify-center items-center gap-y-6 gap-x-14 md:gap-x-20 xl:gap-x-32 mb-4">
+    <footer className="w-full max-w-screen-2xl mx-auto px-4 sm:px-8 pt-4 pb-2 bg-[#9a8f85]">
+      <div className="flex flex-col sm:flex-row justify-center items-center gap-y-6 gap-x-14 md:gap-x-20 xl:gap-x-32 mb-1">
         <div className="sm:w-1/2">
-          <LazyImage src={logo} alt="logo" className="w-24 sm:ms-auto" />
+          <LazyImage src={logo} alt="logo" className="w-20 sm:ms-auto" />
         </div>
-        <ul className="sm:w-1/2 text-white text-sm xxs:text-xl sm:text-2xl flex flex-col items-center sm:items-start gap-1">
+        <ul className="sm:w-1/2 text-white text-sm xxs:text-xl flex flex-col items-center sm:items-start gap-1">
           <li>
             <a href="#products" className="flex items-center gap-2">
               <svg
                 viewBox="0 0 24 24"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className="w-4 h-4 sm:w-6 sm:h-6 inline-block"
+                className="w-4 h-4 inline-block"
               >
                 <g strokeWidth="0"></g>
                 <g strokeLinecap="round" strokeLinejoin="round"></g>
@@ -41,7 +41,7 @@ export const Footer = () => {
               viewBox="0 0 64 64"
               enableBackground="new 0 0 64 64"
               fill="#000000"
-              className="w-4 h-4 sm:w-6 sm:h-6 inline-block"
+              className="w-4 h-4 inline-block"
             >
               <g strokeWidth="0"></g>
               <g strokeLinecap="round" strokeLinejoin="round"></g>
@@ -64,7 +64,7 @@ export const Footer = () => {
                 version="1.1"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="#000000"
-                className="w-4 h-4 sm:w-6 sm:h-6 inline-block"
+                className="w-4 h-4 inline-block"
               >
                 <g strokeWidth="0"></g>
                 <g strokeLinecap="round" strokeLinejoin="round"></g>
@@ -96,7 +96,7 @@ export const Footer = () => {
               viewBox="0 0 24 24"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="w-4 h-4 sm:w-6 sm:h-6 inline-block"
+              className="w-4 h-4 inline-block"
             >
               <g strokeWidth="0"></g>
               <g strokeLinecap="round" strokeLinejoin="round"></g>
@@ -111,17 +111,17 @@ export const Footer = () => {
           </li>
         </ul>
       </div>
-      <div className="flex flex-col items-center gap-2 pt-4 pb-2 text-white">
-        <div className="flex flex-row-reverse items-center gap-2">
+      <div className="flex flex-col items-center gap-1 pt-4 pb-1 text-white">
+        <div className="flex flex-row-reverse items-center gap-1">
           <a
             href="#"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-white p-2 rounded-full main-transition hover:bg-coffee-light"
+            className="bg-white p-1 w-7 h-7 flex justify-center items-center rounded-full main-transition hover:bg-coffee-light"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="w-5 h-5 inline-block"
+              className="w-4 h-4 inline-block"
               viewBox="0 0 448 512"
             >
               <style>svg{`fill:#ffffff`}</style>
@@ -132,11 +132,11 @@ export const Footer = () => {
             href="#"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-white p-2 rounded-full main-transition hover:bg-coffee-light"
+            className="bg-white p-1 w-7 h-7 flex justify-center items-center rounded-full main-transition hover:bg-coffee-light"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="w-5 h-5 inline-block"
+              className="w-4 h-4 inline-block"
               viewBox="0 0 448 512"
             >
               <style>svg{`fill:#ffffff`}</style>
@@ -147,11 +147,11 @@ export const Footer = () => {
             href="#"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-white p-2 rounded-full main-transition hover:bg-coffee-light"
+            className="bg-white p-1 w-7 h-7 flex justify-center items-center rounded-full main-transition hover:bg-coffee-light"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="w-5 h-5 inline-block"
+              className="w-4 h-4 inline-block"
               viewBox="0 0 512 512"
             >
               <style>svg{`fill:#ffffff`}</style>
@@ -162,11 +162,11 @@ export const Footer = () => {
             href="#"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-white p-2 rounded-full main-transition hover:bg-coffee-light"
+            className="bg-white p-1 w-7 h-7 flex justify-center items-center rounded-full main-transition hover:bg-coffee-light"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="w-5 h-5 inline-block"
+              className="w-4 h-4 inline-block"
               viewBox="0 0 320 512"
             >
               <style>svg{`fill:#ffffff`}</style>

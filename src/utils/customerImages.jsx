@@ -12,16 +12,16 @@ import img12 from "../assets/images/customers/12.webp";
 import img13 from "../assets/images/customers/13.webp";
 
 export const customerImages = [
-  img1,
-  img2,
-  img3,
-  img4,
-  img5,
-  img7,
-  img8,
-  img9,
-  img10,
-  img11,
-  img12,
-  img13,
+  { img: img1, link: "#" },
+  { img: img2, link: "#" },
+  { img: img3, link: "#" },
+  { img: img4, link: "#" },
+  { img: img5, link: "#" },
+  { img: img7, link: "#" },
+  { img: img8, link: "#" },
+  { img: img9, link: "#" },
+  { img: img10, link: "#" },
+  { img: img11, link: "#" },
+  { img: img12, link: "#" },
+  { img: img13, link: "#" },
 ];

@@ -17,7 +17,8 @@ const ImagesContainer = ({ slide }) => {
   };
 
   const subImages = createSubImages(slide, 4);
-  const remain = subImages[subImages.length - 1].length < 4? subImages.pop(): [];
+  const remain =
+    subImages[subImages.length - 1].length < 4 ? subImages.pop() : [];
 
   return (
     <div className="w-full flex flex-col justify-center items-center gap-12">
@@ -30,11 +31,17 @@ const ImagesContainer = ({ slide }) => {
             {sub.map((image, idx) => {
               return (
                 <div key={idx} className="">
-                  <LazyImage
-                    src={image}
-                    alt="brand"
-                    className="w-full max-w-[6rem] pointer-events-none"
-                  />
+                  <a
+                    href={image.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <LazyImage
+                      src={image.img}
+                      alt="brand"
+                      className="w-full max-w-[6rem] pointer-events-none"
+                    />
+                  </a>
                 </div>
               );
             })}
@@ -45,11 +52,13 @@ const ImagesContainer = ({ slide }) => {
         {remain.map((image, idx) => {
           return (
             <div key={idx} className="">
-              <LazyImage
-                src={image}
-                alt="brand"
-                className="w-12 xs:w-20 sm:w-full max-w-[6rem] pointer-events-none"
-              />
+              <a href={image.link} target="_blank" rel="noopener noreferrer">
+                <LazyImage
+                  src={image.img}
+                  alt="brand"
+                  className="w-12 xs:w-20 sm:w-full max-w-[6rem] pointer-events-none"
+                />
+              </a>
             </div>
           );
         })}

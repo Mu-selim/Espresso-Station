@@ -17,11 +17,13 @@ export const CustomersSection = () => {
               key={idx}
               className="w-[calc(50%-2rem)] sm:w-1/4 xl:w-[calc(20%-2rem)] flex items-center justify-center"
             >
-              <LazyImage
-                src={image}
-                alt={`customer-${idx + 1}`}
-                className="w-full max-w-[80px]"
-              />
+              <a href={image.link} target="_blank" rel="noopener noreferrer">
+                <LazyImage
+                  src={image.img}
+                  alt={`customer-${idx + 1}`}
+                  className="w-full max-w-[80px]"
+                />
+              </a>
             </div>
           );
         })}
