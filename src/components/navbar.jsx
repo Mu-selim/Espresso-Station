@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import logo from "../assets/images/logo.webp";
 import { BurgerMenu } from "./burgerMenu";
 import { ChangeLang } from "./changeLang";
+import { Link } from "react-router-dom";
 
 const NavList = ({ distanceFromTop }) => {
   const { t: translate } = useTranslation("global");
@@ -12,14 +13,25 @@ const NavList = ({ distanceFromTop }) => {
     <ul className="hidden ml:flex items-center gap-4 ml:gap-6 xl:gap-8 select-none">
       {navList.map((item, idx) => (
         <li key={idx}>
-          <a
-            href={item.link}
-            className={`transition-linear hover:text-coffee-header ${
-              distanceFromTop ? "text-lg" : "text-xl"
-            }`}
-          >
-            {item.name}
-          </a>
+          {item.link.includes("#") ? (
+            <a
+              href={"/" + item.link}
+              className={`transition-linear hover:text-coffee-header ${
+                distanceFromTop ? "text-lg" : "text-xl"
+              }`}
+            >
+              {item.name}
+            </a>
+          ) : (
+            <Link
+              to={item.link}
+              className={`transition-linear hover:text-coffee-header ${
+                distanceFromTop ? "text-lg" : "text-xl"
+              }`}
+            >
+              {item.name}
+            </Link>
+          )}
         </li>
       ))}
     </ul>
