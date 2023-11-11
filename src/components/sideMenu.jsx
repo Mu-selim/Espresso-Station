@@ -18,7 +18,7 @@ export const ProductsSideMenu = ({ sideObj }) => {
         <header className="flex items-center gap-2">
           <CartIcon className="w-8 h-8" fillColor="#353535" />
           <h2
-            className="font-bold font-poppins text-xl"
+            className="font-bold text-xl"
             style={{ letterSpacing: "0" }}
           >
             {products.headerTitle}

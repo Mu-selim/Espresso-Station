@@ -60,7 +60,7 @@
         "isDropDown": false
       },
       {
-        "mainTitle": "Bakery&More",
+        "mainTitle": "Bakery & More",
         "isDropDown": false
       }
     ],
@@ -456,10 +456,10 @@
                 "imgSrc": "pic 18.png",
                 "description": [
                   "Self-contained",
-                  "• Detachable",
-                  "• Dispenser",
-                  "• Snowflake ice mode",
-                  "• Storage box"
+                  "Detachable",
+                  "Dispenser",
+                  "Snowflake ice mode",
+                  "Storage box"
                 ]
               }
             ]
