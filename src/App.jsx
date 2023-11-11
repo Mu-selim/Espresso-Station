@@ -56,9 +56,9 @@ const Contact = () => {
           height: "calc(100vh)",
         }}
       >
-        <div className="lg:w-1/2 md:w-2/3 mx-auto bg-coffee-light p-12 rounded-xl">
-          <div className="flex flex-wrap -m-2">
-            <div className="p-2 w-1/2">
+        <div className="lg:w-1/2 md:w-2/3 mx-auto bg-coffee-light p-12 rounded-xl mt-4">
+          <div className="flex flex-col sm:flex-row flex-wrap -m-2">
+            <div className="p-2 w-full sm:w-1/2">
               <div className="relative">
                 <label htmlFor="name" className="leading-7 text-sm text-gray-600">
                   الاسم
@@ -71,7 +71,7 @@ const Contact = () => {
                 />
               </div>
             </div>
-            <div className="p-2 w-1/2">
+            <div className="p-2 sm:w-1/2">
               <div className="relative">
                 <label htmlFor="email" className="leading-7 text-sm text-gray-600">
                   الايميل
