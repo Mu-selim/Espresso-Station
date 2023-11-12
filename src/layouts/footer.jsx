@@ -88,7 +88,7 @@ export const Footer = () => {
                   </g>
                 </g>
               </svg>
-              <p>Info@espressostation.com</p>
+              <p>Info@espressostation.co</p>
             </a>
           </li>
           <li className="flex items-center gap-2">
