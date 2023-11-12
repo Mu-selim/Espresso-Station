@@ -1,10 +1,13 @@
 import propTypes from "prop-types";
 import { useTranslation } from "react-i18next";
 import { ChangeLang } from "./changeLang";
+import { HashLink } from "react-router-hash-link";
+import { Link } from "react-router-dom";
 
 export const MobileNavList = ({ navList, isOpened }) => {
   const { i18n } = useTranslation("global");
   const isAR = i18n.language.includes("ar") ? true : false;
+  const commonClasses = "transition-linear hover:text-coffee-header";
 
   const handleLanguageChange = (lang) => {
     i18n.changeLanguage(lang.toLowerCase());
@@ -21,12 +24,15 @@ export const MobileNavList = ({ navList, isOpened }) => {
         <ul className="flex flex-col gap-4 ml:gap-6 xl:gap-8">
           {navList.map((item, idx) => (
             <li key={idx}>
-              <a
-                href={item.link}
-                className={`transition-linear hover:text-coffee-header`}
-              >
-                {item.name}
-              </a>
+              {item.link.includes("#") ? (
+                <HashLink to={"/" + item.link} smooth className={commonClasses}>
+                  {item.name}
+                </HashLink>
+              ) : (
+                <Link to={item.link} className={commonClasses}>
+                  {item.name}
+                </Link>
+              )}
             </li>
           ))}
         </ul>

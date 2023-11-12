@@ -27,7 +27,6 @@ export const App = () => {
 
   return (
     <>
-      {/* change html lang using Helmet */}
       <Helmet>
         <html lang={i18n.language} />
       </Helmet>
