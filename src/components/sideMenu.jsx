@@ -117,10 +117,16 @@ export const ProductsSideMenu = ({ sideObj }) => {
           {products.menuOptions[4].mainTitle}
         </li>
         <li
-          className="cursor-pointer font-bold pb-6"
+          className="cursor-pointer font-bold pb"
           onClick={() => handleListSelection("ovens")}
         >
           {products.menuOptions[5].mainTitle}
+        </li>
+        <li
+          className="cursor-pointer font-bold pb-6"
+          onClick={() => handleListSelection("barEquipments")}
+        >
+          {products.menuOptions[6].mainTitle}
         </li>
       </ul>
     </aside>

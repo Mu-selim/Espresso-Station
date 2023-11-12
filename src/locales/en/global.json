@@ -62,6 +62,10 @@
       {
         "mainTitle": "Bakery & More",
         "isDropDown": false
+      },
+      {
+        "mainTitle": "Bar Equipments",
+        "isDropDown": false
       }
     ],
 
@@ -520,6 +524,10 @@
             ]
           }
         ]
+      },
+      "barEquipments": {
+        "title": "Bar Equipments",
+        "brand": []
       }
     }
   },
@@ -528,23 +536,5 @@
     "link": "Home",
     "cities": "Riyadh, Al Khobar",
     "copyRight": "All rights reserved © 2023 "
-  },
-  "contact": {
-    "name": "name",
-    "email": "email",
-    "message": "message",
-    "send": "send",
-    "errors": {
-      "name": "name is required",
-      "email": {
-        "required": "email is required",
-        "invalid": "invalid email"
-      },
-      "message": "message is required"
-    },
-    "submitMessage": {
-      "success": "Message sent successfully",
-      "error": "Something went wrong, please try again later"
-    }
   }
 }
