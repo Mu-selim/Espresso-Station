@@ -65,10 +65,10 @@ export const Contact = () => {
     if (validateForm()) {
       emailjs
         .sendForm(
-          "service_ohwoleh",
-          "template_eetnjjr",
+          import.meta.env.VITE_EMAILJS_SERVICE_ID,
+          import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
           form.current,
-          "nj6QaBpnVjxb0UxEG"
+          import.meta.env.VITE_EMAILJS_USER_ID
         )
         .then(
           () => {
