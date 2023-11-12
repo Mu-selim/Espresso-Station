@@ -83,7 +83,7 @@ export const ImageSlider = () => {
           spaceBetween={15}
           watchSlidesProgress={true}
           autoplay={{
-            delay: 2000,
+            delay: 3000,
             disableOnInteraction: false,
           }}
           loop={true}
