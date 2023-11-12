@@ -117,7 +117,7 @@ export const Contact = () => {
 
   return (
     <main
-      className="w-full flex justify-center items-center h-screen"
+      className="w-full flex justify-center items-center h-screen px-4"
       style={{
         backgroundImage: `url(${bg})`,
         backgroundSize: "cover",
@@ -127,7 +127,7 @@ export const Contact = () => {
     >
       <form
         ref={form}
-        className="lg:w-1/2 md:w-2/3 mx-auto bg-coffee-light p-12 rounded-xl mt-4 mx-4"
+        className=" lg:w-1/2 md:w-2/3 bg-coffee-light px-6 sm:px-12 py-8 rounded-xl mt-4"
         onSubmit={handleSubmit}
       >
         <div className="flex flex-col sm:flex-row flex-wrap -m-2">
