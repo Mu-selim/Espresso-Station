@@ -17,10 +17,7 @@ export const ProductsSideMenu = ({ sideObj }) => {
       <header className="flex justify-between ml:justify-center items-center gap-2 py-4 px-8 rounded-t-lg border-b-2 border-b-coffee-light bg-coffee-light">
         <header className="flex items-center gap-2">
           <CartIcon className="w-8 h-8" fillColor="#353535" />
-          <h2
-            className="font-bold text-xl"
-            style={{ letterSpacing: "0" }}
-          >
+          <h2 className="font-bold text-xl" style={{ letterSpacing: "0" }}>
             {products.headerTitle}
           </h2>
         </header>

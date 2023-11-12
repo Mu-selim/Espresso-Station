@@ -3,32 +3,26 @@ import { useTranslation } from "react-i18next";
 import logo from "../assets/images/logo.webp";
 import { BurgerMenu } from "./burgerMenu";
 import { ChangeLang } from "./changeLang";
+import { HashLink } from "react-router-hash-link";
 import { Link } from "react-router-dom";
 
 const NavList = ({ distanceFromTop }) => {
   const { t: translate } = useTranslation("global");
   const navList = translate("mainNavbar", { returnObjects: true });
+  const commonClasses = `transition-linear hover:text-coffee-header ${
+    distanceFromTop ? "text-lg" : "text-xl"
+  }`;
 
   return (
     <ul className="hidden ml:flex items-center gap-4 ml:gap-6 xl:gap-8 select-none">
       {navList.map((item, idx) => (
         <li key={idx}>
           {item.link.includes("#") ? (
-            <a
-              href={"/" + item.link}
-              className={`transition-linear hover:text-coffee-header ${
-                distanceFromTop ? "text-lg" : "text-xl"
-              }`}
-            >
+            <HashLink to={"/" + item.link} smooth className={commonClasses}>
               {item.name}
-            </a>
+            </HashLink>
           ) : (
-            <Link
-              to={item.link}
-              className={`transition-linear hover:text-coffee-header ${
-                distanceFromTop ? "text-lg" : "text-xl"
-              }`}
-            >
+            <Link to={item.link} className={commonClasses}>
               {item.name}
             </Link>
           )}
