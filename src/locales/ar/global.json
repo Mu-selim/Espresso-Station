@@ -72,6 +72,7 @@
       "equipmentCommercial": { "title": "معدات الإسبرسو التجارية" },
       "equipmentHome": { "title": "معدات الإسبرسو المنزلية" },
       "grindersCommercial": { "title": "طواحين القهوة التجارية" },
+      "grindersHome": { "title": "طواحين القهوة المنزلية" },
       "automaticBrewing": { "title": "التحضير الآلي" },
       "waterDesalination": { "title": "انظمه تحلية المياة" },
       "iceMakers": { "title": "حلول التبريد" },

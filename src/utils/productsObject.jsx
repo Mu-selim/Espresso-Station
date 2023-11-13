@@ -32,7 +32,7 @@ import _6i from "../assets/images/products/brand-products/6i.webp";
 import _pic27 from "../assets/images/products/brand-products/pic 27.webp";
 import _pr from "../assets/images/products/brand-products/pr.webp";
 
-export const productList = {
+export const productObject = {
   equipmentCommercial: {
     brand: [
       {
@@ -239,7 +239,6 @@ export const productList = {
     ],
   },
   waterDesalination: {
-    title: "انظمه تحلية المياة",
     brand: [
       {
         meta: brands[10],
@@ -302,7 +301,6 @@ export const productList = {
     ],
   },
   barEquipments: {
-    title: "معدات تحضير البار",
     brand: [
       {
         meta: brands[14],

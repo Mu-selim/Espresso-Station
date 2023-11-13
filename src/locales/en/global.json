@@ -45,7 +45,7 @@
       {
         "mainTitle": "Grinders",
         "isDropDown": true,
-        "dropDownOption": ["Home Grinders", "Commercial Grinders"]
+        "dropDownOption": ["Commercial Grinders", "Home Grinders"]
       },
       {
         "mainTitle": "Automatic Brewing",
@@ -76,6 +76,7 @@
       "grindersHome": { "title": "Home Coffee Grinders" },
       "automaticBrewing": { "title": "Automatic Brewing" },
       "waterDesalination": { "title": "Water Desalination Systems" },
+      "iceMakers": { "title": "Ice Makers" },
       "ovens": { "title": "Bakery Equipment and Ovens" },
       "barEquipments": { "title": "Bar Equipments" }
     }

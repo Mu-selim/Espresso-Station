@@ -10,9 +10,9 @@ import irhea from "../assets/images/products/brands/irhea.webp";
 import fetoc from "../assets/images/products/brands/fetoc.webp";
 import unox from "../assets/images/products/brands/unox.webp";
 import acaia from "../assets/images/products/brands/acaia.webp";
-import blander from "../assets/images/products/brands/rocket.webp";
-import iceMaker from "../assets/images/products/brands/rocket.webp";
-import bwt from "../assets/images/products/brands/rocket.webp";
+import blander from "../assets/images/products/brands/blander.png";
+import iceMaker from "../assets/images/products/brands/iceMaker.png";
+import bwt from "../assets/images/products/brands/bwt.png";
 
 export const brands = [
   {
