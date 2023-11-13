@@ -36,10 +36,8 @@ export const Navbar = ({ distanceFromTop, isOpened, setIsOpened }) => {
   const { i18n } = useTranslation("global");
   const isAR = i18n.language.includes("ar") ? true : false;
 
-  const handleLanguageChange = (lang) => {
+  const handleLanguageChange = (lang) =>
     i18n.changeLanguage(lang.toLowerCase());
-    window.location.reload();
-  };
 
   return (
     <nav

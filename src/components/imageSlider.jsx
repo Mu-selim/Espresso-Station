@@ -4,8 +4,6 @@ import { Pagination, Navigation, Autoplay } from "swiper/modules";
 import images from "../utils/brandsImages";
 import { LazyImage } from "./lazyImage";
 import "swiper/css";
-import { useTranslation } from "react-i18next";
-import { useEffect } from "react";
 
 const ImagesContainer = ({ slide }) => {
   const createSubImages = (array, chunkSize) => {
@@ -68,17 +66,14 @@ const ImagesContainer = ({ slide }) => {
 };
 
 export const ImageSlider = () => {
-  const { i18n } = useTranslation("global");
   const slide1 = images.slice(0, 12);
   const slide2 = images.slice(12);
-
-  useEffect(() => {}, [i18n.language]);
 
   return (
     <div className="my-4 flex justify-center py-8 sm:mx-8">
       <div className="max-w-5xl overflow-hidden px-4 sm:px-12 2xl:max-w-7xl">
         <Swiper
-          dir={i18n.language.includes("ar".toLowerCase()) ? "rtl" : "ltr"}
+          dir="ltr"
           slidesPerView={1}
           spaceBetween={15}
           watchSlidesProgress={true}

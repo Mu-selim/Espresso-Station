@@ -9,10 +9,8 @@ export const MobileNavList = ({ navList, isOpened }) => {
   const isAR = i18n.language.includes("ar") ? true : false;
   const commonClasses = "transition-linear hover:text-coffee-header";
 
-  const handleLanguageChange = (lang) => {
+  const handleLanguageChange = (lang) =>
     i18n.changeLanguage(lang.toLowerCase());
-    window.location.reload();
-  };
 
   return (
     <menu

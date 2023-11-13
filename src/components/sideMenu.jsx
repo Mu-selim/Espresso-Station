@@ -4,6 +4,7 @@ import { NavArrowIcon } from "../icons/navArrowIcon";
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
 import { BurgerMenu } from "./burgerMenu";
+import { HashLink } from "react-router-hash-link";
 
 export const ProductsSideMenu = ({ sideObj }) => {
   const { t: translate } = useTranslation("global");
@@ -50,17 +51,21 @@ export const ProductsSideMenu = ({ sideObj }) => {
                 sideObj.dropDown1 ? "" : "h-0"
               }`}
             >
-              <li
-                className="mt-2 cursor-pointer"
-                onClick={() => handleListSelection("equipmentCommercial")}
-              >
-                {products.menuOptions[0].dropDownOption[0]}
+              <li className="mt-2 cursor-pointer">
+                <HashLink
+                  to={"/#product-view"}
+                  onClick={() => handleListSelection("equipmentCommercial")}
+                >
+                  {products.menuOptions[0].dropDownOption[0]}
+                </HashLink>
               </li>
-              <li
-                className="cursor-pointer"
-                onClick={() => handleListSelection("equipmentHome")}
-              >
-                {products.menuOptions[0].dropDownOption[1]}
+              <li className="cursor-pointer">
+                <HashLink
+                  to={"/#product-view"}
+                  onClick={() => handleListSelection("equipmentHome")}
+                >
+                  {products.menuOptions[0].dropDownOption[1]}
+                </HashLink>
               </li>
             </ul>
           </div>
@@ -83,50 +88,64 @@ export const ProductsSideMenu = ({ sideObj }) => {
                 sideObj.dropDown2 ? "" : "h-0"
               }`}
             >
-              <li
-                className="mt-2 cursor-pointer"
-                onClick={() => handleListSelection("grindersCommercial")}
-              >
-                {products.menuOptions[1].dropDownOption[0]}
+              <li className="mt-2 cursor-pointer">
+                <HashLink
+                  to={"/#product-view"}
+                  onClick={() => handleListSelection("grindersCommercial")}
+                >
+                  {products.menuOptions[1].dropDownOption[0]}
+                </HashLink>
               </li>
-              <li
-                className="cursor-pointer"
-                onClick={() => handleListSelection("grindersHome")}
-              >
-                {products.menuOptions[1].dropDownOption[1]}
+              <li className="cursor-pointer">
+                <HashLink
+                  to={"/#product-view"}
+                  onClick={() => handleListSelection("grindersHome")}
+                >
+                  {products.menuOptions[1].dropDownOption[1]}
+                </HashLink>
               </li>
             </ul>
           </div>
         </li>
-        <li
-          className="cursor-pointer font-bold"
-          onClick={() => handleListSelection("automaticBrewing")}
-        >
-          {products.menuOptions[2].mainTitle}
+        <li className="cursor-pointer font-bold">
+          <HashLink
+            to={"/#product-view"}
+            onClick={() => handleListSelection("automaticBrewing")}
+          >
+            {products.menuOptions[2].mainTitle}
+          </HashLink>
         </li>
-        <li
-          className="cursor-pointer font-bold"
-          onClick={() => handleListSelection("waterDesalination")}
-        >
-          {products.menuOptions[3].mainTitle}
+        <li className="cursor-pointer font-bold">
+          <HashLink
+            to={"/#product-view"}
+            onClick={() => handleListSelection("waterDesalination")}
+          >
+            {products.menuOptions[3].mainTitle}
+          </HashLink>
         </li>
-        <li
-          className="cursor-pointer font-bold"
-          onClick={() => handleListSelection("iceMakers")}
-        >
-          {products.menuOptions[4].mainTitle}
+        <li className="cursor-pointer font-bold">
+          <HashLink
+            to={"/#product-view"}
+            onClick={() => handleListSelection("iceMakers")}
+          >
+            {products.menuOptions[4].mainTitle}
+          </HashLink>{" "}
         </li>
-        <li
-          className="pb cursor-pointer font-bold"
-          onClick={() => handleListSelection("ovens")}
-        >
-          {products.menuOptions[5].mainTitle}
+        <li className="pb cursor-pointer font-bold">
+          <HashLink
+            to={"/#product-view"}
+            onClick={() => handleListSelection("ovens")}
+          >
+            {products.menuOptions[5].mainTitle}
+          </HashLink>{" "}
         </li>
-        <li
-          className="cursor-pointer pb-6 font-bold"
-          onClick={() => handleListSelection("barEquipments")}
-        >
-          {products.menuOptions[6].mainTitle}
+        <li className="cursor-pointer pb-6 font-bold">
+          <HashLink
+            to={"/#product-view"}
+            onClick={() => handleListSelection("barEquipments")}
+          >
+            {products.menuOptions[6].mainTitle}
+          </HashLink>{" "}
         </li>
       </ul>
     </aside>
