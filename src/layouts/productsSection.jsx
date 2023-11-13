@@ -10,7 +10,9 @@ export const ProductsSection = () => {
 
   const [dropDown1, setDropDown1] = useState(false);
   const [dropDown2, setDropDown2] = useState(false);
-  const [productObjectKey, setProductObjectKey] = useState("equipmentCommercial");
+  const [productObjectKey, setProductObjectKey] = useState(
+    "equipmentCommercial"
+  );
 
   const toggleDropDown1 = () => setDropDown1(!dropDown1);
   const toggleDropDown2 = () => setDropDown2(!dropDown2);

@@ -11,7 +11,8 @@ export const ProductsSideMenu = ({ sideObj }) => {
   const products = translate("products", { returnObjects: true });
   const [isOpened, setIsOpened] = useState(false);
 
-  const handleListSelection = (listTitle) => sideObj.setProductObjectKey(listTitle);
+  const handleListSelection = (listTitle) =>
+    sideObj.setProductObjectKey(listTitle);
 
   return (
     <aside className="h-fit whitespace-nowrap rounded-xl border-2 border-coffee-light ml:w-fit">

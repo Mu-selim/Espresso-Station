@@ -10,7 +10,7 @@ export const ShowAllButton = ({ link, title }) => {
         href={link}
         target="_blank"
         rel="noopener noreferrer"
-        className="main-transition cursor-pointer text-center text-xs xs:text-base rounded-full border border-black bg-coffee-light bg-opacity-60 px-6 py-1 font-bold text-black hover:bg-coffee hover:bg-opacity-70 hover:text-white"
+        className="main-transition cursor-pointer rounded-full border border-black bg-coffee-light bg-opacity-60 px-6 py-1 text-center text-xs font-bold text-black hover:bg-coffee hover:bg-opacity-70 hover:text-white xs:text-base"
       >
         {isAR ? `عرض جميع ${title}` : `View all ${title}`}
       </a>
