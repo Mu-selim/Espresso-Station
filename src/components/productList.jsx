@@ -10,12 +10,12 @@ export const ProductList = ({ productList }) => {
   const list = products.list[productList];
 
   return (
-    <div className="border-2 border-coffee-light rounded-xl w-full h-fit overflow-hidden">
-      <header className="flex justify-center items-center gap-2 py-4 px-8 border-b-2 border-b-coffee-light bg-coffee-light">
-        <h2 className="font-bold text-xl">{list.title}</h2>
+    <div className="h-fit w-full overflow-hidden rounded-xl border-2 border-coffee-light">
+      <header className="flex items-center justify-center gap-2 border-b-2 border-b-coffee-light bg-coffee-light px-8 py-4">
+        <h2 className="text-xl font-bold">{list.title}</h2>
       </header>
       {list.brand.length === 0 ? (
-        <div className="flex justify-center items-center h-48">
+        <div className="flex h-48 items-center justify-center">
           <p className="text-xl font-bold text-coffee-dark">
             {isAR ? "لا يوجد منتجات" : "No products"}
           </p>
@@ -25,36 +25,36 @@ export const ProductList = ({ productList }) => {
           {list.brand.map((brand, idx) => {
             return (
               <div key={idx} className="flex flex-col px-4">
-                <header className="pt-5 text-2xl font-bold text-zinc-600 select-none">
+                <header className="select-none pt-5 text-2xl font-bold text-zinc-600">
                   <h3 className="w-full text-center underline underline-offset-4">
                     {brand.title}
                   </h3>
                 </header>
-                <div className="flex flex-col mt-4 gap-4">
+                <div className="mt-4 flex flex-col gap-4">
                   {brand.productList.map((product, idx) => {
                     return (
                       <div
                         key={idx}
                         className="flex flex-col sm:flex-row sm:gap-4"
                       >
-                        <div className="w-full sm:w-fit flex justify-center">
-                          <div className="w-56 min-w-[10rem] ml:min-w-[10rem] p-4">
+                        <div className="flex w-full justify-center sm:w-fit">
+                          <div className="w-56 min-w-[10rem] p-4 ml:min-w-[10rem]">
                             <a
                               href={product.link}
                               target="_blank"
                               rel="noopener noreferrer"
-                              className="w-full h-fit overflow-hidden"
+                              className="h-fit w-full overflow-hidden"
                             >
                               <LazyImage
                                 src={`/products/${product.imgSrc}`}
                                 alt={product.title}
-                                className="w-full hover:scale-110 main-transition"
+                                className="main-transition w-full hover:scale-110"
                               />
                             </a>
                           </div>
                         </div>
-                        <div className="sm:py-5 w-full">
-                          <h4 className="pt-4 pb-2 text-xl font-bold text-coffee-header select-none">
+                        <div className="w-full sm:py-5">
+                          <h4 className="select-none pb-2 pt-4 text-xl font-bold text-coffee-header">
                             <a
                               href={product.link}
                               target="_blank"
@@ -77,12 +77,12 @@ export const ProductList = ({ productList }) => {
                       </div>
                     );
                   })}
-                  <div className="my-6 sm:mb-6 sm:mt-0 px-2 sm:px-8 flex justify-center">
+                  <div className="my-6 flex justify-center px-2 sm:mb-6 sm:mt-0 sm:px-8">
                     <a
                       href={brand.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="font-bold px-6 py-1 text-black border border-black rounded-full bg-coffee-light bg-opacity-60 main-transition hover:bg-coffee hover:bg-opacity-70 hover:text-white cursor-pointer"
+                      className="main-transition cursor-pointer rounded-full border border-black bg-coffee-light bg-opacity-60 px-6 py-1 font-bold text-black hover:bg-coffee hover:bg-opacity-70 hover:text-white"
                     >
                       {isAR
                         ? `عرض جميع ${brand.title}`

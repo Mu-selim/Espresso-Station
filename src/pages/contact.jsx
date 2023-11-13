@@ -9,7 +9,7 @@ const INITIAL_STATE = { name: "", email: "", message: "" };
 const Input = ({ label, text, type, value, onChange, error }) => {
   return (
     <div className="relative">
-      <label htmlFor={label} className="leading-7 text-sm text-gray-600">
+      <label htmlFor={label} className="text-sm leading-7 text-gray-600">
         {text}
       </label>
       <input
@@ -18,11 +18,11 @@ const Input = ({ label, text, type, value, onChange, error }) => {
         name={label}
         value={value}
         onChange={onChange}
-        className={`w-full bg-gray-100 rounded-lg border ${
+        className={`w-full rounded-lg border bg-gray-100 ${
           error ? "border-red-500" : "border-gray-300"
-        } focus:border-coffee-dark text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out`}
+        } px-3 py-1 text-base leading-8 text-gray-700 outline-none transition-colors duration-200 ease-in-out focus:border-coffee-dark`}
       />
-      {error && <p className="text-red-500 text-sm mt-1">{error}</p>}
+      {error && <p className="mt-1 text-sm text-red-500">{error}</p>}
     </div>
   );
 };
@@ -117,7 +117,7 @@ export const Contact = () => {
 
   return (
     <main
-      className="w-full flex justify-center items-center h-screen px-4"
+      className="flex h-screen w-full items-center justify-center px-4"
       style={{
         backgroundImage: `url(${bg})`,
         backgroundSize: "cover",
@@ -127,11 +127,11 @@ export const Contact = () => {
     >
       <form
         ref={form}
-        className=" lg:w-1/2 md:w-2/3 bg-coffee-light px-6 sm:px-12 py-8 rounded-xl mt-4"
+        className=" mt-4 rounded-xl bg-coffee-light px-6 py-8 sm:px-12 md:w-2/3 lg:w-1/2"
         onSubmit={handleSubmit}
       >
-        <div className="flex flex-col sm:flex-row flex-wrap -m-2">
-          <div className="p-2 w-full sm:w-1/2">
+        <div className="-m-2 flex flex-col flex-wrap sm:flex-row">
+          <div className="w-full p-2 sm:w-1/2">
             <Input
               label="name"
               text={contact.name}
@@ -149,11 +149,11 @@ export const Contact = () => {
               error={formErrors.email}
             />
           </div>
-          <div className="p-2 w-full">
+          <div className="w-full p-2">
             <div className="relative">
               <label
                 htmlFor="message"
-                className="leading-7 text-sm text-gray-600"
+                className="text-sm leading-7 text-gray-600"
               >
                 {contact.message}
               </label>
@@ -162,19 +162,19 @@ export const Contact = () => {
                 name="message"
                 value={formData.message}
                 onChange={handleInputChange}
-                className={`w-full bg-gray-100 rounded-lg border ${
+                className={`w-full rounded-lg border bg-gray-100 ${
                   formErrors.message ? "border-red-500" : "border-gray-300"
-                } focus:border-coffee-dark h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out`}
+                } h-32 resize-none px-3 py-1 text-base leading-6 text-gray-700 outline-none transition-colors duration-200 ease-in-out focus:border-coffee-dark`}
               ></textarea>
               {formErrors.message && (
-                <p className="text-red-500 text-sm mt-1">
+                <p className="mt-1 text-sm text-red-500">
                   {formErrors.message}
                 </p>
               )}
             </div>
             {submitMessage.show && (
               <p
-                className={`text-sm mt-1 text-center ${
+                className={`mt-1 text-center text-sm ${
                   submitMessage.status ? "text-green-500" : "text-red-500"
                 }`}
               >
@@ -182,8 +182,8 @@ export const Contact = () => {
               </p>
             )}
           </div>
-          <div className="p-2 w-full">
-            <button className="flex mx-auto text-white bg-coffee border-0 py-2 px-8 focus:outline-none hover:bg-coffee-dark rounded text-lg main-transition">
+          <div className="w-full p-2">
+            <button className="main-transition mx-auto flex rounded border-0 bg-coffee px-8 py-2 text-lg text-white hover:bg-coffee-dark focus:outline-none">
               {contact.send}
             </button>
           </div>

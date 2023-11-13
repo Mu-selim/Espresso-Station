@@ -16,7 +16,7 @@ export const MobileNavList = ({ navList, isOpened }) => {
 
   return (
     <menu
-      className={`px-8 bg-gray-100 bg-opacity-70 transition-linear rounded-b-xl overflow-hidden ml:hidden ${
+      className={`transition-linear overflow-hidden rounded-b-xl bg-gray-100 bg-opacity-70 px-8 ml:hidden ${
         isOpened ? " h-72" : "h-0"
       }`}
     >

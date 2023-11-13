@@ -13,34 +13,34 @@ export const ProductsSideMenu = ({ sideObj }) => {
   const handleListSelection = (listTitle) => sideObj.setProductList(listTitle);
 
   return (
-    <aside className="ml:w-fit h-fit border-2 border-coffee-light rounded-xl whitespace-nowrap">
-      <header className="flex justify-between ml:justify-center items-center gap-2 py-4 px-8 rounded-t-lg border-b-2 border-b-coffee-light bg-coffee-light">
+    <aside className="h-fit whitespace-nowrap rounded-xl border-2 border-coffee-light ml:w-fit">
+      <header className="flex items-center justify-between gap-2 rounded-t-lg border-b-2 border-b-coffee-light bg-coffee-light px-8 py-4 ml:justify-center">
         <header className="flex items-center gap-2">
-          <CartIcon className="w-8 h-8" fillColor="#353535" />
-          <h2 className="font-bold text-xl" style={{ letterSpacing: "0" }}>
+          <CartIcon className="h-8 w-8" fillColor="#353535" />
+          <h2 className="text-xl font-bold" style={{ letterSpacing: "0" }}>
             {products.headerTitle}
           </h2>
         </header>
         <BurgerMenu
           onClick={() => setIsOpened(!isOpened)}
           isOpened={isOpened}
-          className="flex ml:hidden flex-col justify-between items-end h-5 cursor-pointer select-none"
+          className="flex h-5 cursor-pointer select-none flex-col items-end justify-between ml:hidden"
         />
       </header>
       <ul
-        className={`px-8 flex flex-col gap-4 overflow-hidden ${
+        className={`flex flex-col gap-4 overflow-hidden px-8 ${
           isOpened ? "" : "h-0 ml:h-auto"
         }`}
       >
         <li className="pt-4">
           <div>
             <h3
-              className="cursor-pointer flex items-center gap-1 font-bold"
+              className="flex cursor-pointer items-center gap-1 font-bold"
               onClick={sideObj.toggleDropDown1}
             >
               {products.menuOptions[0].mainTitle}
               <NavArrowIcon
-                className={`w-5 h-5 inline-block ${
+                className={`inline-block h-5 w-5 ${
                   sideObj.dropDown1 ? "rotate-180" : ""
                 }`}
               />
@@ -51,7 +51,7 @@ export const ProductsSideMenu = ({ sideObj }) => {
               }`}
             >
               <li
-                className="cursor-pointer mt-2"
+                className="mt-2 cursor-pointer"
                 onClick={() => handleListSelection("equipmentCommercial")}
               >
                 {products.menuOptions[0].dropDownOption[0]}
@@ -68,12 +68,12 @@ export const ProductsSideMenu = ({ sideObj }) => {
         <li>
           <div>
             <h3
-              className="cursor-pointer flex gap-1 items-center font-bold"
+              className="flex cursor-pointer items-center gap-1 font-bold"
               onClick={sideObj.toggleDropDown2}
             >
               {products.menuOptions[1].mainTitle}
               <NavArrowIcon
-                className={`w-5 h-5 inline-block ${
+                className={`inline-block h-5 w-5 ${
                   sideObj.dropDown2 ? "rotate-180" : ""
                 }`}
               />
@@ -84,7 +84,7 @@ export const ProductsSideMenu = ({ sideObj }) => {
               }`}
             >
               <li
-                className="cursor-pointer mt-2"
+                className="mt-2 cursor-pointer"
                 onClick={() => handleListSelection("grindersCommercial")}
               >
                 {products.menuOptions[1].dropDownOption[0]}
@@ -117,13 +117,13 @@ export const ProductsSideMenu = ({ sideObj }) => {
           {products.menuOptions[4].mainTitle}
         </li>
         <li
-          className="cursor-pointer font-bold pb"
+          className="pb cursor-pointer font-bold"
           onClick={() => handleListSelection("ovens")}
         >
           {products.menuOptions[5].mainTitle}
         </li>
         <li
-          className="cursor-pointer font-bold pb-6"
+          className="cursor-pointer pb-6 font-bold"
           onClick={() => handleListSelection("barEquipments")}
         >
           {products.menuOptions[6].mainTitle}

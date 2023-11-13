@@ -16,9 +16,9 @@ export const ProductsSection = () => {
   const toggleDropDown2 = () => setDropDown2(!dropDown2);
 
   return (
-    <section className="pb-8 pt-24 px-4 sm:px-8" id="products">
+    <section className="px-4 pb-8 pt-24 sm:px-8" id="products">
       <SectionHeader title={products.headerTitle} />
-      <div className="mt-8 text-coffee-darkest flex flex-col ml:flex-row gap-8">
+      <div className="mt-8 flex flex-col gap-8 text-coffee-darkest ml:flex-row">
         <ProductsSideMenu
           sideObj={{
             dropDown1,

@@ -17,7 +17,7 @@ export const Header = () => {
   }, [distanceFromTop]);
 
   return (
-    <header className="fixed top-0 z-40 w-full max-w-screen-2xl mx-auto px-4 sm:px-8 pt-6 pb-2">
+    <header className="fixed top-0 z-40 mx-auto w-full max-w-screen-2xl px-4 pb-2 pt-6 sm:px-8">
       <Navbar
         navList={navList}
         distanceFromTop={distanceFromTop}

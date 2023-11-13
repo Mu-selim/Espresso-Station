@@ -11,7 +11,7 @@ const PagesLayout = () => {
 
   return (
     <div
-      className={`max-w-screen-2xl mx-auto ${
+      className={`mx-auto max-w-screen-2xl ${
         isRTL ? "font-noto" : "font-poppins"
       }`}
       style={{ direction: isRTL ? "rtl" : "ltr" }}
