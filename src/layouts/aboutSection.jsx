@@ -26,6 +26,14 @@ export const AboutSection = () => {
               </p>
             );
           })}
+          <a
+            href="/about/aboutUs.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-coffee-header"
+          >
+            {about.more}
+          </a>
         </div>
         <div className="max-w-xs overflow-hidden rounded-2xl">
           <LazyImage src={aboutImage} alt={about.headerTitle} />

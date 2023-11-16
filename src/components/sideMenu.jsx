@@ -146,7 +146,7 @@ export const ProductsSideMenu = ({ sideObj }) => {
             onClick={() => handleListSelection("barEquipments")}
           >
             {products.menuOptions[6].mainTitle}
-          </HashLink>{" "}
+          </HashLink>
         </li>
       </ul>
     </aside>

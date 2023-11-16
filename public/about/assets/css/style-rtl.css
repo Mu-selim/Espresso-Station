@@ -1,0 +1,47 @@
+/*Style rtl*/
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;700&display=swap');
+
+body{
+	font-family: 'Noto Kufi Arabic', sans-serif;
+}
+
+.title-section{
+	font-weight: 700;
+}
+
+.intro .text-intro .btn-primary{
+	font-family: 'Noto Kufi Arabic', sans-serif;
+}
+
+.equipment-item .card-body ul li {
+    padding-left: 0;
+    padding-right: 25px;
+}
+.equipment-item .card-body ul li:after {
+    left: auto;
+    right: 0;
+}
+.footer .address ul li i {
+    margin-right: 0;
+    margin-left: 7px;
+}
+.form-control{
+	text-align: right;
+}
+.breadcrumb-item+.breadcrumb-item::before{
+    transform: rotate(180deg);
+    padding-left: 0 !important;
+    padding-right: 5px;
+    position: relative;
+    top: 3px;
+}
+.social-links li a {
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+.img-about-us .back-about {
+    right: auto;
+    left: 33px;
+}

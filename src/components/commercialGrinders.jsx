@@ -12,7 +12,7 @@ const CustomProductListStyle = ({ productList }) => {
           rel="noopener noreferrer"
           className="flex justify-center"
         >
-          <div className="max-w-[10rem] scale-110">
+          <div className="max-w-[12rem] scale-110">
             <LazyImage
               src={productList[2].imgSrc}
               alt={productList[2].title}
@@ -70,10 +70,8 @@ export const CommercialGrinders = ({ list }) => {
               </a>
             </div>
             <div
-              className={`flex flex-wrap items-center gap-4 ${
-                idx === 0
-                  ? "justify-center sm:gap-0"
-                  : "justify-around xs:gap-8"
+              className={`flex items-center justify-center gap-4 ${
+                idx === 0 ? "sm:gap-0" : "xs:gap-8"
               }`}
               style={{ direction: idx === 0 ? "rtl" : "ltr" }}
             >
@@ -90,7 +88,7 @@ export const CommercialGrinders = ({ list }) => {
                         rel="noopener noreferrer"
                         className="flex justify-center overflow-hidden"
                       >
-                        <div className="main-transition max-w-[10rem] hover:-translate-y-1">
+                        <div className="main-transition max-w-[12rem] hover:-translate-y-1">
                           <LazyImage
                             src={product.imgSrc}
                             alt={product.title}

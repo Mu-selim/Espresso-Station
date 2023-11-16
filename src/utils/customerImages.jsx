@@ -9,6 +9,8 @@ import img10 from "../assets/images/customers/10.webp";
 import img11 from "../assets/images/customers/11.webp";
 import img12 from "../assets/images/customers/12.webp";
 import img13 from "../assets/images/customers/13.webp";
+import img14 from "../assets/images/customers/14.png";
+import img15 from "../assets/images/customers/15.png";
 
 export const customerImages = [
   { img: img2, link: "#" },
@@ -22,4 +24,6 @@ export const customerImages = [
   { img: img11, link: "#" },
   { img: img12, link: "#" },
   { img: img13, link: "#" },
+  { img: img14, link: "#" },
+  { img: img15, link: "#" },
 ];

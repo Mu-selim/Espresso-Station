@@ -34,7 +34,7 @@ export const ProductList = ({ productObjectKey }) => {
                       rel="noopener noreferrer"
                       className="flex justify-center overflow-hidden"
                     >
-                      <div className="max-w-[8rem]">
+                      <div className="max-w-[10rem]">
                         <LazyImage
                           src={brand.meta.logo}
                           alt={brand.meta.title}
@@ -43,7 +43,7 @@ export const ProductList = ({ productObjectKey }) => {
                       </div>
                     </a>
                   </div>
-                  <div className="flex flex-wrap items-center justify-around gap-4 xs:gap-8">
+                  <div className="flex items-center justify-center gap-4 xs:gap-8">
                     {brand.productList.map((product, idx) => {
                       return (
                         <div key={idx}>
@@ -53,7 +53,7 @@ export const ProductList = ({ productObjectKey }) => {
                             rel="noopener noreferrer"
                             className="flex justify-center overflow-hidden"
                           >
-                            <div className="main-transition max-w-[10rem] hover:-translate-y-1">
+                            <div className="main-transition max-w-[15rem] hover:-translate-y-1">
                               <LazyImage
                                 src={product.imgSrc}
                                 alt={product.title}
