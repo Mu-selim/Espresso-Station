@@ -6,16 +6,16 @@ export const ChangeLang = ({ isAR, handleLanguageChange, className }) => {
       className={
         className
           ? className
-          : "mt-4 flex border-2 border-white w-fit rounded-md overflow-hidden font-bold relative"
+          : "relative mt-4 flex w-fit overflow-hidden rounded-md border-2 border-white font-bold"
       }
     >
       <div
-        className={`absolute z-30 top-0 w-1/2 h-full bg-coffee-header transition-linear ${
+        className={`transition-linear absolute top-0 z-30 h-full w-1/2 bg-coffee-header ${
           isAR ? "left-1/2" : "left-1/2"
         }`}
       ></div>
       <button
-        className={`basis-1/2 z-40 text-center py-2 px-4 ${
+        className={`z-40 basis-1/2 px-4 py-2 text-center ${
           isAR ? "bg-coffee-header text-white" : ""
         }`}
         onClick={() => handleLanguageChange("ar")}
@@ -23,7 +23,7 @@ export const ChangeLang = ({ isAR, handleLanguageChange, className }) => {
         ع
       </button>
       <button
-        className={`basis-1/2 z-40 text-center py-2 px-4 ${
+        className={`z-40 basis-1/2 px-4 py-2 text-center ${
           !isAR ? "bg-coffee-header text-white" : ""
         }`}
         onClick={() => handleLanguageChange("en")}

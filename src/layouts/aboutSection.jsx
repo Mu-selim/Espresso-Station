@@ -8,15 +8,15 @@ export const AboutSection = () => {
   const about = translate("about", { returnObjects: true });
 
   return (
-    <section className="pb-8 pt-24 px-8 bg-clr-bg-2" id="about">
+    <section className="bg-clr-bg-2 px-8 pb-8 pt-24" id="about">
       <SectionHeader title={about.headerTitle} />
-      <div className="flex flex-col-reverse sm:flex-row mt-12 justify-evenly items-center gap-8">
+      <div className="mt-12 flex flex-col-reverse items-center justify-evenly gap-8 sm:flex-row">
         <div className="flex flex-col gap-6">
           {about.paragraphs.map((paragraph, idx) => {
             return (
               <p
                 key={idx}
-                className="max-w-lg text-sm xxs:text-lg 2xl:text-2xl text-center sm:text-start tracking-wider"
+                className="max-w-lg text-center text-sm tracking-wider xxs:text-lg sm:text-start 2xl:text-2xl"
                 style={{
                   wordSpacing: "1px",
                   letterSpacing: "0",
@@ -26,8 +26,16 @@ export const AboutSection = () => {
               </p>
             );
           })}
+          <a
+            href="/about/aboutUs.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-coffee-header"
+          >
+            {about.more}
+          </a>
         </div>
-        <div className="max-w-xs rounded-2xl overflow-hidden">
+        <div className="max-w-xs overflow-hidden rounded-2xl">
           <LazyImage src={aboutImage} alt={about.headerTitle} />
         </div>
       </div>

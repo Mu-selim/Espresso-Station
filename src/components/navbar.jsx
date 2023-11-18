@@ -14,20 +14,31 @@ const NavList = ({ distanceFromTop }) => {
   }`;
 
   return (
-    <ul className="hidden ml:flex items-center gap-4 ml:gap-6 xl:gap-8 select-none">
-      {navList.map((item, idx) => (
-        <li key={idx}>
-          {item.link.includes("#") ? (
-            <HashLink to={"/" + item.link} smooth className={commonClasses}>
-              {item.name}
-            </HashLink>
-          ) : (
-            <Link to={item.link} className={commonClasses}>
-              {item.name}
-            </Link>
-          )}
-        </li>
-      ))}
+    <ul className="hidden select-none items-center gap-4 ml:flex ml:gap-6 xl:gap-8">
+      {navList.map((item, idx) => {
+        if (item.link === "/about/aboutUs.html") {
+          return (
+            <li key={idx}>
+              <a href={item.link} className={commonClasses}>
+                {item.name}
+              </a>
+            </li>
+          );
+        }
+        return (
+          <li key={idx}>
+            {item.link.includes("#") ? (
+              <HashLink to={"/" + item.link} smooth className={commonClasses}>
+                {item.name}
+              </HashLink>
+            ) : (
+              <Link to={item.link} className={commonClasses}>
+                {item.name}
+              </Link>
+            )}
+          </li>
+        );
+      })}
     </ul>
   );
 };
@@ -36,34 +47,32 @@ export const Navbar = ({ distanceFromTop, isOpened, setIsOpened }) => {
   const { i18n } = useTranslation("global");
   const isAR = i18n.language.includes("ar") ? true : false;
 
-  const handleLanguageChange = (lang) => {
+  const handleLanguageChange = (lang) =>
     i18n.changeLanguage(lang.toLowerCase());
-    window.location.reload();
-  };
 
   return (
     <nav
-      className={`flex justify-between items-center bg-gray-100 bg-opacity-70 py-3 px-6 rounded-xl transition-linear ${
+      className={`transition-linear flex items-center justify-between rounded-xl bg-gray-100 bg-opacity-70 px-6 py-3 ${
         isOpened ? "rounded-b-none" : ""
       }`}
     >
       <div
         className={`transition-linear ${
-          distanceFromTop ? "w-10 h-10" : "w-12 h-12"
+          distanceFromTop ? "h-10 w-10" : "h-12 w-12"
         }`}
       >
-        <img src={logo} alt="logo" className="w-full h-full" />
+        <img src={logo} alt="logo" className="h-full w-full" />
       </div>
       <NavList distanceFromTop={distanceFromTop} />
       <BurgerMenu
         onClick={() => setIsOpened(!isOpened)}
         isOpened={isOpened}
-        className="flex ml:hidden flex-col justify-between items-end h-5 cursor-pointer select-none"
+        className="flex h-5 cursor-pointer select-none flex-col items-end justify-between ml:hidden"
       />
       <ChangeLang
         isAR={isAR}
         handleLanguageChange={handleLanguageChange}
-        className="hidden ml:flex border-2 border-white w-fit rounded-md overflow-hidden font-bold relative"
+        className="relative hidden w-fit overflow-hidden rounded-md border-2 border-white font-bold ml:flex"
       />
     </nav>
   );

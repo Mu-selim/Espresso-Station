@@ -5,20 +5,20 @@ export const BurgerMenu = ({ onClick, isOpened, className }) => {
     <div className={className} onClick={onClick}>
       <span
         className={
-          "w-8 h-1 bg-black rounded-full main-transition " +
-          (isOpened ? " rotate-45 translate-y-1" : "")
+          "main-transition h-1 w-8 rounded-full bg-black " +
+          (isOpened ? " translate-y-1 rotate-45" : "")
         }
       ></span>
       <span
         className={
-          "h-1 bg-black rounded-full main-transition " +
+          "main-transition h-1 rounded-full bg-black " +
           (isOpened ? "w-0 " : "w-6 ")
         }
       ></span>
       <span
         className={
-          "h-1 bg-black rounded-full main-transition " +
-          (isOpened ? " -rotate-45 -translate-y-3 w-8" : "w-7")
+          "main-transition h-1 rounded-full bg-black " +
+          (isOpened ? " w-8 -translate-y-3 -rotate-45" : "w-7")
         }
       ></span>
     </div>

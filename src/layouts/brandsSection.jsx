@@ -6,7 +6,7 @@ export const BrandsSection = () => {
   const { t: translate } = useTranslation("global");
   const brands = translate("brands", { returnObjects: true });
   return (
-    <section className="pb-8 pt-24 bg-clr-bg-1" id="brands">
+    <section className="bg-clr-bg-1 pb-8 pt-24" id="brands">
       <SectionHeader title={brands.headerTitle} />
       <ImageSlider />
     </section>

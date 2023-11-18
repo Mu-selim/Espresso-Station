@@ -8,20 +8,20 @@ export const CustomersSection = () => {
   const customers = translate("customers", { returnObjects: true });
 
   return (
-    <section className="pb-8 pt-12 px-4 sm:px-8 bg-clr-bg-2">
+    <section className="bg-clr-bg-2 px-4 pb-8 pt-12 sm:px-8">
       <SectionHeader title={customers.headerTitle} />
-      <div className="mt-8 px-4 sm:px-8 py-12 w-full bg-white flex justify-center flex-wrap gap-x-8 gap-y-12 rounded-2xl overflow-hidden">
+      <div className="mt-8 flex w-full flex-wrap justify-center gap-x-8 gap-y-12 overflow-hidden rounded-2xl bg-white px-4 py-12 sm:px-8">
         {customerImages.map((image, idx) => {
           return (
             <div
               key={idx}
-              className="w-[calc(50%-2rem)] sm:w-1/4 xl:w-[calc(20%-2rem)] flex items-center justify-center"
+              className="flex w-[calc(50%-2rem)] items-center justify-center sm:w-1/4 xl:w-[calc(20%-2rem)]"
             >
               <a href={image.link} target="_blank" rel="noopener noreferrer">
                 <LazyImage
                   src={image.img}
                   alt={`customer-${idx + 1}`}
-                  className="w-full max-w-[80px]"
+                  className="w-full max-w-[7rem]"
                 />
               </a>
             </div>
