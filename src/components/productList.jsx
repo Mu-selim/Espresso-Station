@@ -34,7 +34,7 @@ export const ProductList = ({ productObjectKey }) => {
                       rel="noopener noreferrer"
                       className="flex justify-center overflow-hidden"
                     >
-                      <div className="max-w-[10rem]">
+                      <div className="max-w-[8rem]">
                         <LazyImage
                           src={brand.meta.logo}
                           alt={brand.meta.title}

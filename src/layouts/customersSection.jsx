@@ -21,7 +21,7 @@ export const CustomersSection = () => {
                 <LazyImage
                   src={image.img}
                   alt={`customer-${idx + 1}`}
-                  className="w-full max-w-[80px]"
+                  className="w-full max-w-[7rem]"
                 />
               </a>
             </div>

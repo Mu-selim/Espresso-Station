@@ -20,19 +20,34 @@ export const MobileNavList = ({ navList, isOpened }) => {
     >
       <div className="py-3">
         <ul className="flex flex-col gap-4 ml:gap-6 xl:gap-8">
-          {navList.map((item, idx) => (
-            <li key={idx}>
-              {item.link.includes("#") ? (
-                <HashLink to={"/" + item.link} smooth className={commonClasses}>
-                  {item.name}
-                </HashLink>
-              ) : (
-                <Link to={item.link} className={commonClasses}>
-                  {item.name}
-                </Link>
-              )}
-            </li>
-          ))}
+          {navList.map((item, idx) => {
+            if (item.link === "/about/aboutUs.html") {
+              return (
+                <li key={idx}>
+                  <a href={item.link} className={commonClasses}>
+                    {item.name}
+                  </a>
+                </li>
+              );
+            }
+            return (
+              <li key={idx}>
+                {item.link.includes("#") ? (
+                  <HashLink
+                    to={"/" + item.link}
+                    smooth
+                    className={commonClasses}
+                  >
+                    {item.name}
+                  </HashLink>
+                ) : (
+                  <Link to={item.link} className={commonClasses}>
+                    {item.name}
+                  </Link>
+                )}
+              </li>
+            );
+          })}
         </ul>
         <ChangeLang isAR={isAR} handleLanguageChange={handleLanguageChange} />
       </div>
